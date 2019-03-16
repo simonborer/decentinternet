@@ -1,9 +1,9 @@
 ---
-date: "2014-04-09"
+date: "2019-03-14"
 title: "Decent Internet"
 alert: 
   text: "New to accessibility? <span class='underline'>Start here</span>"
-  href: "./where-to-start-with-accessibility/"
+  href: "./where-to-start/"
 ---
 
 <div class="site-description">

@@ -1,5 +1,5 @@
 ---
-date: "2014-09-28"
+date: "2099-09-28"
 tags: ["accessibility", "a11y", "AODA", "WAI-ARIA", "ARIA"]
 title: "Glossary"
 atf: "As with so many things in the digital world, accessibility is rife with acronyms, appropriated terms and buzzwords. Here we clear up a few things."
