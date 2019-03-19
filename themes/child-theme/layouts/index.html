@@ -1,0 +1,33 @@
+{{ define "main" }}
+  <main id="main" class="container__content-main">
+    <h1 class="page-title--homepage">{{ .Title }}</h1>
+    {{ .Content }}
+    <ul class="article-list">
+    {{ range first 10 (where .Pages.ByPublishDate.Reverse "Section" "post") }}
+      <li class="article-list__item">
+        <article class="article-list__article">
+          <h2 class="article-list__title {{ if .Params.featuredImage }}has-featured-image{{end}}">
+          {{ if .Params.featuredImage }}
+          <img class="article-list__title-img" src="{{ .Permalink }}{{ .Params.featuredImage.img }}" alt="{{ .Params.featuredImage.alt }}">
+          {{ end }}
+            <a class="article-list__title-anchor {{ if .Params.featuredImage }}has-featured-image{{end}}" href="{{ .Permalink }}">
+              {{ .Title }}
+            </a>
+          </h2>
+          <div class="article-list__date">{{ $dateFormat := $.Site.Params.dateFormat | default "Jan 2, 2006" }}
+          {{ .PublishDate.Format $dateFormat }}</div>
+          {{ if .Params.atf }}
+            <p class="article-list__summary">{{ .Params.atf | markdownify }} </p>
+          {{ else }}
+            <p class="article-list__summary">{{ .Summary | markdownify }}</p>
+          {{ end }}
+          {{ if or (.Truncated) (.Params.atf) }}
+          <a class="emp truncated-link" href="{{ .RelPermalink }}">Read More…</a>
+          {{ end }}
+      	</article>
+      </li>
+    {{ end }}
+    </ul>
+    <div class="emp--green archive-link">Read older articles in the <a href="./archive">archive</a>.</div>
+  </main>
+{{ end }}

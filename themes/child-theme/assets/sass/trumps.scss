@@ -1,0 +1,161 @@
+[role="contentinfo"] {
+    font-size: $supplemental-text;
+    margin-top: 4rem;
+    text-align: center;
+    @include breakpoint(large){
+        margin-top: 8rem;
+    }
+}
+
+.link-icon {
+    width: 0.75em;
+    height: 0.75em;
+    vertical-align: middle;
+}
+
+.underline {
+    text-decoration: underline;
+    margin-left: .5rem;
+}
+
+.h2-container {
+    position: relative;
+    font-size: 1.66rem;
+    margin-bottom: 2rem;
+    margin-top: 4rem;
+}
+
+.h2-container a {
+    position: absolute;
+    margin-top: -3rem;
+    padding-top: 3rem;
+    top: 0;
+    line-height: 1;
+    left: -1em;
+    border: 0;
+}
+
+.vh {
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+@media (-ms-high-contrast: active) {
+    img[src*=".svg"] {
+        background: $bg-no-alpha;
+        padding: 0.5rem;
+    }
+}
+
+.emp {
+    @include emp;
+
+    &--green {
+        @include emp(green);
+    }
+
+    &--gold {
+        @include emp(gold);
+    }
+
+    &--blue {
+        @include emp(blue);
+    }
+
+    &--card {
+        padding: .75em 1em;
+        line-height: 1.5em;
+    }
+}
+
+@mixin h1 {
+    display: block;
+    width: 100%;
+    margin-top: 0;
+    padding: 1rem;
+    @include breakpoint(large) {
+        display: inline-block;
+        width: auto;
+        padding: 0;
+    }
+}
+
+.h1 {
+    @include h1;
+    margin-bottom: 0;
+
+    @include breakpoint(large) {
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+    }
+
+    &--post-title {
+        @include h1;
+        margin-bottom: .5rem;
+
+        @include breakpoint(large) {
+            margin-top: 2rem;
+            margin-left: 1rem;
+            margin-bottom: 2rem;
+        }
+    }
+}
+
+.truncated-link {
+    @include button-anim;
+    margin-top: 1.5rem;
+    padding: 0 .5rem;
+    border-bottom: 0 solid transparent;
+    font-size: $supplemental-text;
+    text-decoration: none;
+}
+
+.archive-link {
+    margin-top: 3rem;
+}
+
+.custom-summary {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: .5rem .75rem;
+    @include breakpoint(large){
+        margin: 1rem;
+    }
+}
+
+.solo-list {
+    margin: 2rem 0 2rem 2.25rem
+}
+
+.divider {
+    background: $brand-colour-gradient;
+    height: .33rem;
+    border: 0 solid transparent;
+    display: block;
+    width: 100%;
+
+    @include breakpoint(large) {
+        margin: 1rem 0 0;
+    }
+
+    &--hero {
+        margin-bottom: 3rem;
+        display: none;
+
+        @include breakpoint(large) {
+            display: block;
+        }
+    }
+}
+
+.sr-only {
+    font-size: 0;
+}
+
+.layout-auto {
+    table-layout: auto;
+}

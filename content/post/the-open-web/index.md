@@ -1,6 +1,6 @@
 ---
 date: "2018-10-11"
-tags: ["accessibility", "a11y", "code", "semantics"]
+tags: ["accessibility", "code", "semantics", "specifications", "vintage"]
 title: "The open web"
 featuredImage:
   img: images/macplus.jpg
@@ -41,7 +41,7 @@ You will work with (and by with, I mean for) people who do not understand the di
 
 Where will your product be when those experimental browser features are deprecated? How can you future-proof without adhering to the open specs?
 
-Think about this: Firefox gets most of their money from... {{< extlink "https://en.wikipedia.org/wiki/Mozilla_Foundation#Financing" >}}Google{{</ extlink >}}. Wait, what? Why?
+Think about this: Firefox gets most of their money from… {{< extlink "https://en.wikipedia.org/wiki/Mozilla_Foundation#Financing" >}}Google{{</ extlink >}}. Wait, what? Why?
 
 In part, it's because being the default search engine in one of the world's most popular browsers is pretty lucrative. In addition to that, though, Google's business model depends on the open web. It has made a multi-billion dollar bet that the best place to be is not in a "walled garden", but as the concierge to the innovations afforded by a democratized space.
 

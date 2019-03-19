@@ -1,0 +1,26 @@
+{{ define "main" }}
+  <main id="main" class="container__content-main">
+    <h1 class="h1 emp--green">{{ .Title }}</h1>
+    <hr class="divider divider--hero">
+    {{ .Content }}
+    <ul class="article-list">
+    {{ range where .Site.RegularPages.ByPublishDate.Reverse "Type" "post" }}
+      <li class="article-list__item">
+        <article class="article-list__article">
+          <h2 class="article-list__title">
+            <a class="article-list__title-anchor" href="{{ .Permalink }}">
+              {{ .Title }}
+            </a>
+          </h2>
+          {{ if .Params.atf }}
+            <p class="article-list__summary">{{ .Params.atf }} </p>
+          {{ else }}
+            <p class="article-list__summary">{{ .Summary }}</p>
+          {{ end }}
+          <a class="emp truncated-link" href="{{ .RelPermalink }}">Read More…</a>
+        </article>
+      </li>
+	 {{ end }}
+    </ul>
+  </main>
+{{ end }}

@@ -8,7 +8,7 @@ featuredImage:
   alt: 'Bush in fog'
 ---
 
-There are times when you need to pick and choose when you're going to hide things visually, remove it from the DOM, hide things from screen readers, or show things (like text alternatives, or keyboard-focussed content) only to those using assistive technology. Let's take a look at the different techniques that are available to us.
+There are times when you need to pick and choose when you're going to hide things visually, remove it from the DOM, hide things from screen readers, or show things (like text alternatives, or keyboard-focused content) only to those using assistive technology. Let's take a look at the different techniques that are available to us.
 
 ## Visibility Cheat Sheet
 

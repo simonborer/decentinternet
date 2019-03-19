@@ -1,0 +1,106 @@
+// Settings – used with preprocessors and contain font, colors definitions, etc.
+
+// map-deep-get required for colour settings
+@function map-deep-get($map, $keys...) {
+    @each $key in $keys {
+        $map: map-get($map, $key);
+    }
+
+    @return $map;
+}
+
+$colour-map: (background: rgba(252, 237, 206, 0.125),
+text: #3c4151,
+pink: (fore: #f7bea3, back: #f25d4e),
+green: (fore: #91e0c4, back: #a1ca92, contrast: #53674c),
+gold: (fore: #ffe1a9, back: #fed257),
+blue: (fore: #8ED4E8, back: #6E79E0));
+
+$bg: map-get($colour-map, background);
+$bg-no-alpha: rgb(254, 250, 241);
+
+$text: map-get($colour-map, text);
+$text-light: rgba($text, 0.75);
+
+$pink: map-deep-get($colour-map, pink, 'fore');
+$green: map-deep-get($colour-map, green, 'fore');
+$gold: map-deep-get($colour-map, gold, 'fore');
+$blue: map-deep-get($colour-map, blue, 'fore');
+$pink-bg: map-deep-get($colour-map, pink, 'back');
+$green-bg: map-deep-get($colour-map, green, 'back');
+$gold-bg: map-deep-get($colour-map, gold, 'back');
+$blue-bg: map-deep-get($colour-map, blue, 'back');
+
+$border-blue: rgba($blue, .5);
+
+$brand-colour-gradient: linear-gradient(to right, $pink 25%, $green 25%, $green 50%, $gold 50%, $gold 75%, $blue 75%);
+
+$supplemental-text: .8rem;
+
+$sidebar-width: 15rem;
+$sidebar-width--collapsed: 9rem;
+$sidebar-diff: $sidebar-width - $sidebar-width--collapsed;
+
+$sidebar-border-width: 1rem;
+$sidebar-border-width--large: 1.75rem;
+
+$reading-column-width: 40rem;
+
+/* latin-ext */
+@font-face {
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 400;
+  font-display: fallback;
+  src: local('Archivo Regular'), local('Archivo-Regular'), url(https://fonts.gstatic.com/s/archivo/v4/k3kQo8UDI-1M0wlSfdfoLmvDIaK18A.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 400;
+  font-display: fallback;
+  src: local('Archivo Regular'), local('Archivo-Regular'), url(https://fonts.gstatic.com/s/archivo/v4/k3kQo8UDI-1M0wlSfdnoLmvDIaI.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 700;
+  font-display: fallback;
+  src: local('Archivo Bold'), local('Archivo-Bold'), url(https://fonts.gstatic.com/s/archivo/v4/k3kVo8UDI-1M0wlSdWLNO0jhLIiP-Q_G8w.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 700;
+  font-display: fallback;
+  src: local('Archivo Bold'), local('Archivo-Bold'), url(https://fonts.gstatic.com/s/archivo/v4/k3kVo8UDI-1M0wlSdWLNO0bhLIiP-Q8.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: auto;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu7GxKKTU1Kvnz.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: auto;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4mxKKTU1Kg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+$body-font: 'Archivo', sans-serif;
+
+$heading-font: 'Roboto', serif;

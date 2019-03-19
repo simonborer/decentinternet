@@ -1,6 +1,6 @@
 ---
 date: "2019-03-19"
-tags: ["accessibility", "a11y", "code", "semantics", "ARIA", "WAI-ARIA", "DOM", "DOM API"]
+tags: ["accessibility", "code", "semantics", "ARIA", "WAI-ARIA", "DOM", "DOM API"]
 title: "Intro to ARIA"
 atf: "ARIA is one of the most neglected aspects of accessibility, and one of the most important! Let's learn the basics of supplementing our native semantics with ARIA attributes."
 featuredImage:
@@ -48,10 +48,10 @@ The main type of information that ARIA (Accessible Rich Internet Applications) p
 
 <pre><code class="language-html">&lt;div role="button"&gt;&lt;/div&gt;</code></pre>
 
-...is not redundant. If you are using a <code>div</code> as a button, there is no semantic indicator that it is meant to function as a button unless you specify it with the <code>role</code> attribute.
+…is not redundant. If you are using a <code>div</code> as a button, there is no semantic indicator that it is meant to function as a button unless you specify it with the <code>role</code> attribute.
 
 <pre><code class="language-html">&lt;button role="button" /&gt;</code></pre>
-...on the other hand, <em>is</em> redundant. The native semantics make it apparent to all concerned that this button is, in fact, a button.
+…on the other hand, <em>is</em> redundant. The native semantics make it apparent to all concerned that this button is, in fact, a button.
 
 ## Want to be safe? Test!
 
@@ -74,7 +74,7 @@ Work with your QA department to determine which screen readers you can test on. 
 
 Normally I'd tell you to check out the MDN docs, but, as of this writing, a lot of their ARIA documentation is incomplete.
 
-<!-- That's why I've come up with a list of <a href='{{< ref "/aria-attributes-and-properties" >}}'>all ARIA attributes and properties</a>. -->
+<!-- That's why I've come up with a list of <a href=''>all ARIA attributes and properties</a>. -->
 
 There are <em>a lot</em> of ARIA attributes and properties with varying levels of support. Here are the common, well-supported ones you should know to get your feet wet.
 
@@ -171,7 +171,7 @@ All ARIA attributes other than <code>role</code> are prefixed with <code>aria-</
 	</tbody>
 </table>
 
-<!-- Don't forget to check out my exhaustive list of <a href='{{< ref "/aria-attributes-and-properties" >}}'>all ARIA attributes and properties</a>. Learn them all and dazzle your friends and co-workers! -->
+<!-- Don't forget to check out my exhaustive list of <a href=''>all ARIA attributes and properties</a>. Learn them all and dazzle your friends and co-workers! -->
 
 
 There are a lot, but you should know about the role attribute, which labels interactive elements, including tabs, search, form, and grid; and state attributes including aria-live, aria-expanded, and aria-hidden (which differs from the native hidden attribute).

@@ -1,0 +1,263 @@
+// Elements – styling for bare HTML elements (like H1, A, etc.). These come with default styling from the browser so we can redefine them here.
+
+html {
+    overflow-x: hidden;
+    font-size: calc(1em + 0.33vw);
+}
+
+body {
+    background: $bg-no-alpha;
+    color: $text;
+    font-family: $body-font;
+    line-height: 1.4em;
+    counter-reset: footnotes;
+    position: relative;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: $heading-font;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    color: darken($pink-bg, 26.9);
+    
+    &[aria-describedby="footnote-label"] {
+        counter-increment: footnotes;
+        text-decoration: none;
+        cursor: default;
+        outline: none;
+
+        &:after {
+            content: '['counter(footnotes) ']';
+            vertical-align: super;
+            font-size: 0.5em;
+            margin-left: .125rem;
+            text-decoration: underline;
+            cursor: pointer;
+
+        }
+
+        &:focus:after {
+            outline: thin dotted;
+            outline-offset: .125rem;
+        }
+    }
+
+    &:visited{
+        color: darken($pink-bg, 32);
+    }
+}
+
+*,
+*::before,
+*::after {
+    font-family: inherit;
+    background-color: inherit;
+    color: inherit;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+template {
+  display: none !important;
+}
+
+br,
+dt,
+dd,
+th,
+td,
+option,
+[hidden] + *,
+li + li,
+body {
+    margin-top: 0;
+}
+
+
+abbr {
+    text-decoration: none;
+    cursor: help;
+    border-bottom: 1px dashed $text;
+}
+img {
+    max-width: 100%;
+    max-height: 50vh;
+}
+
+:focus:not([tabindex="-1"]),
+[for="themer"] :focus + [aria-hidden] {
+    outline: thin dotted $pink-bg;
+}
+a {
+  outline-offset: 2px;
+}
+
+/* Fix for IE :( */
+[tabindex="-1"]:focus,
+div:not([tabindex]):focus {
+    outline: none;
+}
+
+[hidden] {
+  display: none;
+}
+
+/* Skip link */
+[href="#main"] {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    color: $bg-no-alpha;
+    background: $text;
+    position: absolute;
+    top: -3rem;
+    text-align: center;
+    z-index: 1;
+}
+[href="#main"]:focus {
+    top: 2rem;
+    outline: none;
+    &:visited {
+      color: $bg;
+    }
+}
+
+/* Text styles */
+h1,
+h2,
+h3,
+h4 {
+    line-height: 1.125;
+}
+
+
+kbd {
+    line-height: 1;
+    font-size: 0.66rem;
+    padding: 0.1rem 0.33rem;
+    border-radius: 0.25rem;
+    border: 2px solid $text;
+    box-shadow: 0.125rem 0.125rem 0 $text;
+    vertical-align: 0.33em;
+}
+pre {
+    margin: 1rem 0;
+    overflow-x: auto;
+    padding: 1.5rem;
+    border: 1px solid $text;
+}
+code {
+    font-family: monospace;
+}
+
+/* Blockquotes */
+blockquote {
+  border-left: 0.5rem solid $text;
+  padding-left: 2rem;
+  margin-top: 1rem;
+}
+
+[data-launch] {
+  font-size: 0.66rem !important;
+  padding: 0.5rem !important;
+  margin-top: 0 !important;
+  border-radius: 0 !important;
+  border-top-left-radius: 0.33rem !important;
+  box-shadow: none !important;
+  background: $text !important;
+  color: $bg-no-alpha !important;
+  position: absolute !important;
+  right: 0 !important;
+  bottom: 0 !important;
+}
+
+/* Forms */
+label {
+  display: inline-block;
+  font-weight: bold;
+}
+[for="themer"] {
+  background: $text;
+  color: $bg-no-alpha;
+  padding: 0.25em 0.75em;
+  cursor: pointer;
+  width: 100%;
+  @include breakpoint(large){
+    padding: .75em;
+  }
+}
+[for="themer"] [aria-hidden]::before {
+  content: 'off';
+}
+[for="themer"] :checked + [aria-hidden]::before {
+  content: 'on';
+}
+
+/* Tables */
+table {
+    text-align: left;
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+}
+th,
+td {
+    border: 2px solid $text;
+    padding: 0.5rem;
+    line-height: 1.25;
+    margin: 0;
+}
+th {
+    font-weight: bold;
+}
+th:empty {
+    border: 0;
+}
+caption {
+    font-size: 1.125rem;
+    padding-bottom: 0.25rem;
+    font-style: italic;
+}
+/* Figures */
+figure {
+    text-align: center;
+}
+figcaption {
+    font-size: $supplemental-text;
+    font-style: italic;
+    margin-top: 0.5rem;
+}
+main {
+    display: block;
+    counter-reset: fig;
+    min-height: 100vh;
+}
+figcaption::before {
+    counter-increment: fig;
+    content: 'Figure ' counter(fig) ':\0020';
+    font-weight: bold;
+}
+
+
+/* SVG icons */
+a svg,
+button svg,
+th svg,
+li > svg {
+    height: 0.75em;
+    width: 0.75em;
+}
+h1 svg {
+  margin-right: 0;
+  width: 0.85em;
+  height: 0.85em;
+}

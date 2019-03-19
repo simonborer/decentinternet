@@ -1,0 +1,91 @@
+// Tools – globally used mixins and functions. 
+
+@mixin breakpoint($size: "medium") {
+    @if $size=="small" {
+        @media (min-width: $reading-column-width) {
+            @content;
+        }
+    }
+
+    @else {
+        @media (min-width: 60rem) {
+            @content;
+        }
+    }
+}
+
+@mixin colour-combo($colour) {
+    background: map-deep-get($colour-map, $colour, "fore");
+    border-color: map-deep-get($colour-map, $colour, "back");
+}
+
+@mixin text-colour-combo($colour) {
+    background: map-deep-get($colour-map, $colour, "fore");
+}
+
+@mixin active() {
+    &:hover {
+        @content;
+    }
+
+    &:focus {
+        @content;
+    }
+
+    &:active {
+        @content;
+    }
+}
+
+@mixin emp($colour: pink) {
+    @include text-colour-combo($colour);
+    display: inline-block;
+}
+
+@mixin button-anim {
+    transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+
+    @include active {
+        box-shadow: 0 2px 4px -1px rgba(0, 0, 0, .2), 0 4px 5px 0 rgba(0, 0, 0, .14), 0 1px 10px 0 rgba(0, 0, 0, .12);
+    }
+}
+
+@mixin container {
+    display: grid;
+    grid-template-areas: "nav""content";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    height: 100vh;
+    padding: 0 0 2rem;
+
+    @include breakpoint(large) {
+        grid-template-areas: "nav content";
+        grid-template-rows: auto 1fr;
+        padding: 0;
+    }
+}
+
+@mixin theme-border($width: 'medium') {
+    content: "";
+    display: block;
+    background: $brand-colour-gradient;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    @if $width == 'large' {
+        width: $sidebar-border-width--large + .25;
+        right: $sidebar-border-width--large * -1;   
+    } @else {
+        width: $sidebar-border-width + .25;
+        right: $sidebar-border-width * -1;
+    }
+}
+
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

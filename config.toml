@@ -2,9 +2,8 @@ baseURL = "https://example.com"
 languageCode = "en-us"
 defaultContentLanguage = "en"
 title = "Decent Internet"
-theme = "cupper-hugo-theme"
+theme = "child-theme"
 googleAnalytics = "UA-123456789-1"
-disqusShortname = "yourdiscussshortname"
 
 [taxonomies]
   tag = "tags"

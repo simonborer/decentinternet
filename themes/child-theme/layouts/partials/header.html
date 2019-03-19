@@ -1,0 +1,14 @@
+<header class="container__nav header{{ if .IsHome }} home-nav{{ end }}" role="banner">
+      <a class="header__logo" href="/" aria-label="{{ .Site.Title }} home page">
+        <img class="header__logo-img" src="{{ "images/logo.svg" | absURL }}" alt="Site logo"><h1 class="site-title--mobile">{{ .Site.Title }}</h1>
+      </a>
+      {{ if .IsHome }}
+      <p class="header__description">
+        {{ with .Site.Params.description }}
+          {{ . | markdownify }}
+        {{ end }}
+      </p>
+      {{ end }}
+    {{ partial "nav.html" . }}
+
+</header>

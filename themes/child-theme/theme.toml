@@ -1,0 +1,16 @@
+name = "Decent Internet"
+license = "MIT"
+licenselink = "https://github.com/zwbetz-gh/cupper-hugo-theme/blob/master/LICENSE"
+description = "Articles and resources on how to make the internet accessible, humane and manageable. Some things are code-oriented, but everything is people-oriented."
+homepage = "https://decentinternet.com"
+tags = ["accessible", "blog", "documentation", "dark"]
+features = ["accessible", "blog", "documentation", "dark"]
+
+[author]
+  name = "Simon Borer"
+  homepage = "https://simonborer.ca/"
+
+[original]
+  name = "Cupper"
+  homepage = "https://thepaciellogroup.github.io/cupper/"
+  repo = "https://github.com/ThePacielloGroup/cupper"

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Lang }}">
+  {{ partial "head.html" . }}
+  <body>
+    <a href="#main">skip to content</a>
+    {{ partial "svg.html" . }}
+    {{ if .Params.alert }}
+    <div id="alertContainer" class="alert">
+      {{ if .Params.alert.href }}<a class="alert__anchor" href="{{ .Params.alert.href }}">{{ partial "alert-icon.html" . }}{{ .Params.alert.text | markdownify }}</a>
+      {{ else }}
+      {{ partial "alert-icon.html" . }}{{ .Params.alert | markdownify }}
+      {{ end }}
+      <button id="alertClose" class="alert__close"><span class="sr-only">Close alert</span>{{ partial "close-icon.html" . }}</button>
+    </div>
+    {{ end }}
+    <div class="container{{ if .IsHome }} container--home{{end}}">
+      {{ partial "header.html" . }}
+      <div class="container__content">
+        {{ block "main" . }}{{ end }}
+        {{ partial "footer.html" . }}
+      </div>
+    </div>
+    {{ partial "script.html" . }}
+    {{ partial "google-analytics-async.html" . }}
+  </body>
+</html>

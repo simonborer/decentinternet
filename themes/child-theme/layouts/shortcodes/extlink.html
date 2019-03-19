@@ -1,0 +1,3 @@
+{{ $href := .Get 0 }}
+{{ $class := .Get 1 }}
+<a {{ if $class }}class="{{ $class }}" {{ end }}href="{{ $href }}" target="_blank" rel="noopener noreferrer">{{ .Inner }}<span class="sr-only"> Link opens in new tab</span></a>

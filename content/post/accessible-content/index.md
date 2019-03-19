@@ -26,7 +26,7 @@ If this is the second page in a series of three pages, say so!
 
 
 ## Headings
-<strong>Headings should structure your document.</strong> Think of the way your information is structured - it's very rarely appropriate to just have a single heading and then paragraphs all the way down. Headings should provide meaning and context.
+<strong>Headings should structure your document.</strong> Think of the way your information is structured - it's rarely appropriate to just have a single heading and then paragraphs all the way down. Headings should provide meaning and context.
 
 To the devs out there: all the worst abuses I've seen of semantics have been heading elements. If your design team and your content team aren't rigourously aligned (and when are they ever?), you need to abstract your heading styles from your heading elements. 
 
@@ -48,9 +48,9 @@ Alternative text should be your best effort to convey all of the relevant inform
 
 ### Alternative text for spatial information
 
-This gets tricky when you get into things like graphs. In graphs and charts, very specific data is conveyed visually. Creating a data-point-perfect text alternative to a line graph is a tremendous challenge. 
+This gets tricky when you get into things like graphs. In graphs and charts, specific data is conveyed visually down to a granular level. Creating a data-point-perfect text alternative to a line graph is a tremendous challenge. 
 
-When deciding on an appropriate text alternative for visually-represented data, consider first whether you're presenting this information with the expectation that users can do their own analysis. If not, consider communicating in plain language what it is that you want your users to take away from your content. Has your stock value steadily risen since 1987? Then say so, rather than trying to impress a few people, while creating a barrier for others.
+When deciding on an appropriate text alternative for visually represented data, consider first whether you're presenting this information with the expectation that users can do their own analysis. If not, consider communicating in plain language what it is that you want your users to take away from your content. Has your stock value steadily risen since 1987? Then say so, rather than trying to impress a few people, while creating a barrier for others.
 
 When you really are trying to provide people with data, the WCAG suggests that a data table may be sufficient. However, this is hardly a true alternative. The team behind {{< extlink "https://www.highcharts.com/docs/chart-concepts/accessibility" >}}Highcharts.js{{</ extlink >}} have been working towards displaying data in a way that is truly navigable for users accessing the data without a mouse or with a screenreader. Unfortunately, {{< extlink "https://d3js.org/" >}}D3.js{{</ extlink >}} isn't showing signs of making their leading library of SVG-driven data visualization accessible.
 
@@ -68,7 +68,7 @@ Remember to keep an ear out for sounds that convey relevant information, and mak
 
 ## Form Labels, Instructions and Errors
 
-Be very clear about what's expected of a user, and how errors should be resolved. This is a {{< extlink "https://www.nngroup.com/articles/error-message-guidelines/" >}}fundamental usability heuristic{{</ extlink >}} - it doesn't just apply to accessibility. A red asterisk appearing suddenly adjacent to an input isn't helpful to everyone. Be explicit.
+Be clear about what's expected of a user, and how errors should be resolved. This is a {{< extlink "https://www.nngroup.com/articles/error-message-guidelines/" >}}fundamental usability heuristic{{</ extlink >}} - it doesn't just apply to accessibility. A red asterisk appearing suddenly adjacent to an input isn't helpful to everyone. Be explicit.
 
 <p class="emp--gold">{{< extlink "https://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error.html" >}}Reference: WCAG, Input Assistance - Understanding Guideline 3.3{{</ extlink >}}</p>
 
