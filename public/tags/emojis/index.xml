@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Emojis on Decent Internet</title>
+    <link>https://decentinternet.com/tags/emojis/</link>
+    <description>Recent content in Emojis on Decent Internet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 28 Feb 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://decentinternet.com/tags/emojis/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Accessibile Emojis</title>
+      <link>https://decentinternet.com/emojis/</link>
+      <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://decentinternet.com/emojis/</guid>
+      <description>I would wager that the most common type of image in the world today, in terms of sheer volume, are the beloved emoji. People use literally billions of themLink opens in new tab everyday.
+Full assistive technology default support for emojis is not there yetLink opens in new tab , but with the help of ARIA, we can make them accessible! 😁
+1. Take your unicode emoji…
+😐 2. … wrap it in a &amp;lt;span&amp;gt; tag…</description>
+    </item>
+    
+  </channel>
+</rss>

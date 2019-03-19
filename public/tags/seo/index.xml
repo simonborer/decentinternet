@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Seo on Decent Internet</title>
+    <link>https://decentinternet.com/tags/seo/</link>
+    <description>Recent content in Seo on Decent Internet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 28 Sep 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://decentinternet.com/tags/seo/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Where to start</title>
+      <link>https://decentinternet.com/where-to-start/</link>
+      <pubDate>Fri, 28 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://decentinternet.com/where-to-start/</guid>
+      <description>The beginning of things, according to Hans Breinlinger   What is it For a product or service to be accessible, it needs to be something that isn&amp;rsquo;t constrained by the myth of the average person. We make assumptions about people and how they&amp;rsquo;ll interact with the things we make. Humans being a wonderfully diverse (and delightfully weird) bunch, those assumptions are going to be wrong a good chunk of the time.</description>
+    </item>
+    
+  </channel>
+</rss>
