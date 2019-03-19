@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Specifications on Decent Internet</title>
-    <link>https://decentinternet.com/tags/specifications/</link>
+    <link>https://www.decentinternet.com/tags/specifications/</link>
     <description>Recent content in Specifications on Decent Internet</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 11 Oct 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://decentinternet.com/tags/specifications/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.decentinternet.com/tags/specifications/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>The open web</title>
-      <link>https://decentinternet.com/the-open-web/</link>
+      <link>https://www.decentinternet.com/the-open-web/</link>
       <pubDate>Thu, 11 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://decentinternet.com/the-open-web/</guid>
+      <guid>https://www.decentinternet.com/the-open-web/</guid>
       <description>The internet is open We work on an open platform. The beautiful thing about the internet is that it is a (nearly) global public space built on open access (e.g. Net Neutrality), open standards and open specifications. This comes with the responsibility, that you create services that are meant to be consumed by clients you aren&amp;rsquo;t familiar with, some that haven&amp;rsquo;t even been invented yet.
 Working on the internet means working with open specifications (i.</description>
     </item>

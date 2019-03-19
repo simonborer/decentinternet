@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Charts on Decent Internet</title>
-    <link>https://decentinternet.com/tags/charts/</link>
+    <link>https://www.decentinternet.com/tags/charts/</link>
     <description>Recent content in Charts on Decent Internet</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 04 Oct 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://decentinternet.com/tags/charts/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.decentinternet.com/tags/charts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Creating Accessible Content</title>
-      <link>https://decentinternet.com/accessible-content/</link>
+      <link>https://www.decentinternet.com/accessible-content/</link>
       <pubDate>Thu, 04 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://decentinternet.com/accessible-content/</guid>
+      <guid>https://www.decentinternet.com/accessible-content/</guid>
       <description>There&amp;rsquo;s nothing wrong with leaning into your title content   Page Titles Page titles should be unique and descriptive. The content in the title element of your page&amp;rsquo;s head should give users a concise, but solid description of how this page differs from any other page, and what the content is going to be.
 If this is the second page in a series of three pages, say so!</description>
     </item>

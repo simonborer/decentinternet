@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Archive on Decent Internet</title>
-    <link>https://decentinternet.com/archive/</link>
+    <link>https://www.decentinternet.com/archive/</link>
     <description>Recent content in Archive on Decent Internet</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://decentinternet.com/archive/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.decentinternet.com/archive/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>

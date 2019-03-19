@@ -2,264 +2,264 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Decent Internet</title>
-    <link>https://decentinternet.com/tags/</link>
+    <link>https://www.decentinternet.com/tags/</link>
     <description>Recent content in Tags on Decent Internet</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 19 Mar 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://decentinternet.com/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.decentinternet.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Accessibility</title>
-      <link>https://decentinternet.com/tags/accessibility/</link>
+      <link>https://www.decentinternet.com/tags/accessibility/</link>
       <pubDate>Tue, 19 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://decentinternet.com/tags/accessibility/</guid>
+      <guid>https://www.decentinternet.com/tags/accessibility/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Alt</title>
-      <link>https://decentinternet.com/tags/alt/</link>
+      <link>https://www.decentinternet.com/tags/alt/</link>
       <pubDate>Thu, 04 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://decentinternet.com/tags/alt/</guid>
+      <guid>https://www.decentinternet.com/tags/alt/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Aria</title>
-      <link>https://decentinternet.com/tags/aria/</link>
+      <link>https://www.decentinternet.com/tags/aria/</link>
       <pubDate>Tue, 19 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://decentinternet.com/tags/aria/</guid>
+      <guid>https://www.decentinternet.com/tags/aria/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Bootstrap</title>
-      <link>https://decentinternet.com/tags/bootstrap/</link>
+      <link>https://www.decentinternet.com/tags/bootstrap/</link>
       <pubDate>Mon, 01 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://decentinternet.com/tags/bootstrap/</guid>
+      <guid>https://www.decentinternet.com/tags/bootstrap/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Bulma</title>
-      <link>https://decentinternet.com/tags/bulma/</link>
+      <link>https://www.decentinternet.com/tags/bulma/</link>
       <pubDate>Mon, 01 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://decentinternet.com/tags/bulma/</guid>
+      <guid>https://www.decentinternet.com/tags/bulma/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Charts</title>
-      <link>https://decentinternet.com/tags/charts/</link>
+      <link>https://www.decentinternet.com/tags/charts/</link>
       <pubDate>Thu, 04 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://decentinternet.com/tags/charts/</guid>
+      <guid>https://www.decentinternet.com/tags/charts/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Cheatsheet</title>
-      <link>https://decentinternet.com/tags/cheatsheet/</link>
+      <link>https://www.decentinternet.com/tags/cheatsheet/</link>
       <pubDate>Mon, 01 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://decentinternet.com/tags/cheatsheet/</guid>
+      <guid>https://www.decentinternet.com/tags/cheatsheet/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Code</title>
-      <link>https://decentinternet.com/tags/code/</link>
+      <link>https://www.decentinternet.com/tags/code/</link>
       <pubDate>Tue, 19 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://decentinternet.com/tags/code/</guid>
+      <guid>https://www.decentinternet.com/tags/code/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Content</title>
-      <link>https://decentinternet.com/tags/content/</link>
+      <link>https://www.decentinternet.com/tags/content/</link>
       <pubDate>Thu, 04 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://decentinternet.com/tags/content/</guid>
+      <guid>https://www.decentinternet.com/tags/content/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Disability</title>
-      <link>https://decentinternet.com/tags/disability/</link>
+      <link>https://www.decentinternet.com/tags/disability/</link>
       <pubDate>Fri, 28 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://decentinternet.com/tags/disability/</guid>
+      <guid>https://www.decentinternet.com/tags/disability/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Dom</title>
-      <link>https://decentinternet.com/tags/dom/</link>
+      <link>https://www.decentinternet.com/tags/dom/</link>
       <pubDate>Tue, 19 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://decentinternet.com/tags/dom/</guid>
+      <guid>https://www.decentinternet.com/tags/dom/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Dom Api</title>
-      <link>https://decentinternet.com/tags/dom-api/</link>
+      <link>https://www.decentinternet.com/tags/dom-api/</link>
       <pubDate>Tue, 19 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://decentinternet.com/tags/dom-api/</guid>
+      <guid>https://www.decentinternet.com/tags/dom-api/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Emojis</title>
-      <link>https://decentinternet.com/tags/emojis/</link>
+      <link>https://www.decentinternet.com/tags/emojis/</link>
       <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://decentinternet.com/tags/emojis/</guid>
+      <guid>https://www.decentinternet.com/tags/emojis/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Forms</title>
-      <link>https://decentinternet.com/tags/forms/</link>
+      <link>https://www.decentinternet.com/tags/forms/</link>
       <pubDate>Thu, 04 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://decentinternet.com/tags/forms/</guid>
+      <guid>https://www.decentinternet.com/tags/forms/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Foundation</title>
-      <link>https://decentinternet.com/tags/foundation/</link>
+      <link>https://www.decentinternet.com/tags/foundation/</link>
       <pubDate>Mon, 01 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://decentinternet.com/tags/foundation/</guid>
+      <guid>https://www.decentinternet.com/tags/foundation/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Graphs</title>
-      <link>https://decentinternet.com/tags/graphs/</link>
+      <link>https://www.decentinternet.com/tags/graphs/</link>
       <pubDate>Thu, 04 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://decentinternet.com/tags/graphs/</guid>
+      <guid>https://www.decentinternet.com/tags/graphs/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Html5 Boilerplate</title>
-      <link>https://decentinternet.com/tags/html5-boilerplate/</link>
+      <link>https://www.decentinternet.com/tags/html5-boilerplate/</link>
       <pubDate>Mon, 01 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://decentinternet.com/tags/html5-boilerplate/</guid>
+      <guid>https://www.decentinternet.com/tags/html5-boilerplate/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Links</title>
-      <link>https://decentinternet.com/tags/links/</link>
+      <link>https://www.decentinternet.com/tags/links/</link>
       <pubDate>Thu, 04 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://decentinternet.com/tags/links/</guid>
+      <guid>https://www.decentinternet.com/tags/links/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Pdfs</title>
-      <link>https://decentinternet.com/tags/pdfs/</link>
+      <link>https://www.decentinternet.com/tags/pdfs/</link>
       <pubDate>Thu, 04 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://decentinternet.com/tags/pdfs/</guid>
+      <guid>https://www.decentinternet.com/tags/pdfs/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Semantics</title>
-      <link>https://decentinternet.com/tags/semantics/</link>
+      <link>https://www.decentinternet.com/tags/semantics/</link>
       <pubDate>Tue, 19 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://decentinternet.com/tags/semantics/</guid>
+      <guid>https://www.decentinternet.com/tags/semantics/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Seo</title>
-      <link>https://decentinternet.com/tags/seo/</link>
+      <link>https://www.decentinternet.com/tags/seo/</link>
       <pubDate>Fri, 28 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://decentinternet.com/tags/seo/</guid>
+      <guid>https://www.decentinternet.com/tags/seo/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Specifications</title>
-      <link>https://decentinternet.com/tags/specifications/</link>
+      <link>https://www.decentinternet.com/tags/specifications/</link>
       <pubDate>Thu, 11 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://decentinternet.com/tags/specifications/</guid>
+      <guid>https://www.decentinternet.com/tags/specifications/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Video</title>
-      <link>https://decentinternet.com/tags/video/</link>
+      <link>https://www.decentinternet.com/tags/video/</link>
       <pubDate>Thu, 04 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://decentinternet.com/tags/video/</guid>
+      <guid>https://www.decentinternet.com/tags/video/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Vintage</title>
-      <link>https://decentinternet.com/tags/vintage/</link>
+      <link>https://www.decentinternet.com/tags/vintage/</link>
       <pubDate>Thu, 11 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://decentinternet.com/tags/vintage/</guid>
+      <guid>https://www.decentinternet.com/tags/vintage/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Visibility</title>
-      <link>https://decentinternet.com/tags/visibility/</link>
+      <link>https://www.decentinternet.com/tags/visibility/</link>
       <pubDate>Mon, 01 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://decentinternet.com/tags/visibility/</guid>
+      <guid>https://www.decentinternet.com/tags/visibility/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Wai Aria</title>
-      <link>https://decentinternet.com/tags/wai-aria/</link>
+      <link>https://www.decentinternet.com/tags/wai-aria/</link>
       <pubDate>Tue, 19 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://decentinternet.com/tags/wai-aria/</guid>
+      <guid>https://www.decentinternet.com/tags/wai-aria/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Wcag</title>
-      <link>https://decentinternet.com/tags/wcag/</link>
+      <link>https://www.decentinternet.com/tags/wcag/</link>
       <pubDate>Fri, 28 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://decentinternet.com/tags/wcag/</guid>
+      <guid>https://www.decentinternet.com/tags/wcag/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Zelda</title>
-      <link>https://decentinternet.com/tags/zelda/</link>
+      <link>https://www.decentinternet.com/tags/zelda/</link>
       <pubDate>Thu, 04 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://decentinternet.com/tags/zelda/</guid>
+      <guid>https://www.decentinternet.com/tags/zelda/</guid>
       <description></description>
     </item>
     

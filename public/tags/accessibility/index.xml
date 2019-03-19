@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Accessibility on Decent Internet</title>
-    <link>https://decentinternet.com/tags/accessibility/</link>
+    <link>https://www.decentinternet.com/tags/accessibility/</link>
     <description>Recent content in Accessibility on Decent Internet</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 19 Mar 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://decentinternet.com/tags/accessibility/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.decentinternet.com/tags/accessibility/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Intro to ARIA</title>
-      <link>https://decentinternet.com/intro-to-aria/</link>
+      <link>https://www.decentinternet.com/intro-to-aria/</link>
       <pubDate>Tue, 19 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://decentinternet.com/intro-to-aria/</guid>
+      <guid>https://www.decentinternet.com/intro-to-aria/</guid>
       <description>What is ARIA? ARIA, or &amp;lsquo;WAI-ARIA&amp;rsquo; (they&amp;rsquo;re the same thing) is a specification from the W3C, just like the specs for HTML, CSS, etc.
 It is a set of element attributes meant to supplement native HTML semantics, particularly (but by no means exclusively) by marking up dynamic content, such as tabs, forms and other user interface elements, or &amp;lsquo;live&amp;rsquo; content, like a Twitter feed.
 Let&amp;rsquo;s take a step back and learn a little about the DOM before we dive into how ARIA adds to the information available to users about what the DOM is doing.</description>
@@ -24,10 +24,10 @@ Let&amp;rsquo;s take a step back and learn a little about the DOM before we dive
     
     <item>
       <title>Accessibile Emojis</title>
-      <link>https://decentinternet.com/emojis/</link>
+      <link>https://www.decentinternet.com/emojis/</link>
       <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://decentinternet.com/emojis/</guid>
+      <guid>https://www.decentinternet.com/emojis/</guid>
       <description>I would wager that the most common type of image in the world today, in terms of sheer volume, are the beloved emoji. People use literally billions of themLink opens in new tab everyday.
 Full assistive technology default support for emojis is not there yetLink opens in new tab , but with the help of ARIA, we can make them accessible! 😁
 1. Take your unicode emoji…
@@ -36,40 +36,40 @@ Full assistive technology default support for emojis is not there yetLink opens 
     
     <item>
       <title>The open web</title>
-      <link>https://decentinternet.com/the-open-web/</link>
+      <link>https://www.decentinternet.com/the-open-web/</link>
       <pubDate>Thu, 11 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://decentinternet.com/the-open-web/</guid>
+      <guid>https://www.decentinternet.com/the-open-web/</guid>
       <description>The internet is open We work on an open platform. The beautiful thing about the internet is that it is a (nearly) global public space built on open access (e.g. Net Neutrality), open standards and open specifications. This comes with the responsibility, that you create services that are meant to be consumed by clients you aren&amp;rsquo;t familiar with, some that haven&amp;rsquo;t even been invented yet.
 Working on the internet means working with open specifications (i.</description>
     </item>
     
     <item>
       <title>Creating Accessible Content</title>
-      <link>https://decentinternet.com/accessible-content/</link>
+      <link>https://www.decentinternet.com/accessible-content/</link>
       <pubDate>Thu, 04 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://decentinternet.com/accessible-content/</guid>
+      <guid>https://www.decentinternet.com/accessible-content/</guid>
       <description>There&amp;rsquo;s nothing wrong with leaning into your title content   Page Titles Page titles should be unique and descriptive. The content in the title element of your page&amp;rsquo;s head should give users a concise, but solid description of how this page differs from any other page, and what the content is going to be.
 If this is the second page in a series of three pages, say so!</description>
     </item>
     
     <item>
       <title>Accessibility and Visibility</title>
-      <link>https://decentinternet.com/accessibility-and-visibility/</link>
+      <link>https://www.decentinternet.com/accessibility-and-visibility/</link>
       <pubDate>Mon, 01 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://decentinternet.com/accessibility-and-visibility/</guid>
+      <guid>https://www.decentinternet.com/accessibility-and-visibility/</guid>
       <description>There are times when you need to pick and choose when you&amp;rsquo;re going to hide things visually, remove it from the DOM, hide things from screen readers, or show things (like text alternatives, or keyboard-focused content) only to those using assistive technology. Let&amp;rsquo;s take a look at the different techniques that are available to us.
 Visibility Cheat Sheet   Hidden from screenreaders Removed from the DOM Invisible, but still occupies layout space   aria-hidden=&#34;</description>
     </item>
     
     <item>
       <title>Where to start</title>
-      <link>https://decentinternet.com/where-to-start/</link>
+      <link>https://www.decentinternet.com/where-to-start/</link>
       <pubDate>Fri, 28 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://decentinternet.com/where-to-start/</guid>
+      <guid>https://www.decentinternet.com/where-to-start/</guid>
       <description>The beginning of things, according to Hans Breinlinger   What is it For a product or service to be accessible, it needs to be something that isn&amp;rsquo;t constrained by the myth of the average person. We make assumptions about people and how they&amp;rsquo;ll interact with the things we make. Humans being a wonderfully diverse (and delightfully weird) bunch, those assumptions are going to be wrong a good chunk of the time.</description>
     </item>
     
