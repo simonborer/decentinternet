@@ -3,7 +3,9 @@ date: "2018-09-28"
 tags: ["accessibility", "code", "content", "SEO", "WCAG", "disability"]
 title: "Where to start"
 atf: "Accessibility is one of those things that is never 'done'. It's a principle. If accessibility (digital or otherwise) is something you want to know more about, let's take a moment to look at where to start."
-
+featuredImage:
+  img: images/venn.png
+  alt: 'Venn diagram'
 ---
 
 {{< figure

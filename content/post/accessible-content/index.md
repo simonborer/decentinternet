@@ -3,6 +3,9 @@ date: "2018-10-04"
 tags: ["accessibility", "content", "links", "alt", "graphs", "charts", "forms", "video", "PDFs", "Zelda"]
 title: "Creating Accessible Content"
 atf: "Accessibility isn't just for developers. Meeting WCAG requirements <em>has</em> to be a team effort, and content is no exception. This is also a great way to get SEO wins, while improving your accessibility!"
+featuredImage:
+  img: images/kopfer.jpg
+  alt: 'A stock photo'
 ---
 
 {{< figure
