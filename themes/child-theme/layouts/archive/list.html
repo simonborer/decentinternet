@@ -13,9 +13,9 @@
             </a>
           </h2>
           {{ if .Params.atf }}
-            <p class="article-list__summary">{{ .Params.atf }} </p>
+            <p class="article-list__summary">{{ .Params.atf | markdownify }} </p>
           {{ else }}
-            <p class="article-list__summary">{{ .Summary }}</p>
+            <p class="article-list__summary">{{ .Summary | markdownify }}</p>
           {{ end }}
           <a class="emp truncated-link" href="{{ .RelPermalink }}">Read More…</a>
         </article>

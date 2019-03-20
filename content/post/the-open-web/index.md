@@ -2,6 +2,7 @@
 date: "2018-10-11"
 tags: ["accessibility", "code", "semantics", "specifications", "vintage"]
 title: "The open web"
+atf: "We work on an open platform. The beautiful thing about the internet is that it is a (nearly) global public space built on open access (e.g. Net Neutrality), open standards and open specifications. This comes with the responsibility, that you create services that are meant to be consumed by clients you aren't familiar with, some that haven't even been invented yet."
 featuredImage:
   img: images/macplus.jpg
   alt: 'Mac Plus'

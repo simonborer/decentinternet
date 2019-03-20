@@ -96,6 +96,7 @@
         align-items: center;
         padding: 1rem;
         border-bottom: 0;
+        text-decoration: none;
 
         @include breakpoint(large) {
             background: $bg-no-alpha;
@@ -176,9 +177,8 @@
 
 .site-title--mobile {
     font-size: 1.75rem;
-    text-align: center;
     flex-grow: 1;
-    margin: 0;
+    margin: 0 0 0 1rem;
     color: $text;
 
     @include breakpoint(large) {
@@ -212,39 +212,43 @@
     }
 }
 
-$article-list-title-height: 6rem;
+$article-list-title-height: 8rem;
+$article-list-title-height--large: 6rem;
 
 .article-list {
     list-style: none;
-
-    &__item {
+    &__item{
         &:first-child {
-            margin-top: 3rem;
-
-            @include breakpoint(large) {
+            margin-top: 2rem;
+            .container--home & {
                 margin-top: 0;
             }
         }
     }
-
     &__article {
-        margin: 0 0 3rem;
         max-width: 100vw;
-        padding: 0 2rem 2rem;
+        margin-bottom: 2rem;
+        padding-bottom: 2rem;
         border-bottom: .06rem solid $border-blue;
 
         @include breakpoint(large) {
-            padding: 0 0 3rem;
+            padding-bottom: 3rem;
+            margin-bottom: 3rem;
         }
     }
 
     &__title {
         margin-bottom: 1rem;
+        margin-left: 1rem;
         display: inline-block;
         position: relative;
         width: 100%;
         &.has-featured-image {
+            margin-left: 0;
             height: $article-list-title-height;
+            @include breakpoint(large){
+               height: $article-list-title-height--large; 
+            }
         }
 
         &-anchor {
@@ -284,6 +288,16 @@ $article-list-title-height: 6rem;
             height: $article-list-title-height;
             object-fit: cover;
             filter: contrast(85%);
+            @include breakpoint(large){
+               height: $article-list-title-height--large; 
+            }
+        }
+    }
+
+    &__summary {
+        padding: 0 1rem;
+        @include breakpoint(large){
+            padding: 0;
         }
     }
 
@@ -291,6 +305,10 @@ $article-list-title-height: 6rem;
         font-size: $supplemental-text;
         font-style: italic;
         margin-bottom: .75rem;
+        padding: 0 1rem;
+        @include breakpoint(large){
+            padding: 0;
+        }
     }
 
 }
@@ -298,15 +316,15 @@ $article-list-title-height: 6rem;
 .meta {
     margin-top: 1.5rem;
     font-size: $supplemental-text;
+    padding-left: 1rem;
 
     &__list {
         list-style: none;
-        margin-left: 3rem;
+        margin-left: 0;
         margin-top: 3rem;
         display: inline;
 
         @include breakpoint(large) {
-            margin-left: 0;
             margin-top: 0;
         }
     }

@@ -7,8 +7,14 @@
         }
     }
 
+    @else if $size=="medium" {
+        @media (min-width: 50rem) {
+            @content;
+        }
+    }
+
     @else {
-        @media (min-width: 60rem) {
+        @media (min-width: 65rem) {
             @content;
         }
     }
