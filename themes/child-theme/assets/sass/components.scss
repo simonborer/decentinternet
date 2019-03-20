@@ -131,6 +131,7 @@
     &__description {
         background: $green;
         padding: 1rem;
+        font-style: italic;
 
         @include breakpoint(large) {
             padding: 0;
