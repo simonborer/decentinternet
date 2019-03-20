@@ -169,5 +169,7 @@
 }
 
 .layout-auto {
-    table-layout: auto;
+    @include breakpoint(medium){
+        table-layout: auto;
+    }
 }

@@ -213,9 +213,12 @@ table {
 th,
 td {
     border: 2px solid $text;
-    padding: 0.5rem;
+    padding: 0.125rem;
     line-height: 1.25;
     margin: 0;
+    @include breakpoint(medium){
+      padding: 0.5rem; 
+    }
 }
 th {
     font-weight: bold;

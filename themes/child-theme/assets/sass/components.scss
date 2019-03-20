@@ -467,7 +467,9 @@ $article-list-title-height--large: 6rem;
     & ul {
         margin: 1rem;
     }
-
+    & ol {
+        margin: 1rem;
+    }
     h2 + figure {
         margin-top: 0.5em;
     }

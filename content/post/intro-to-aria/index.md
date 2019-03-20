@@ -125,51 +125,54 @@ The <code>role</code> attribute specifies what type of component an element repr
 
 All ARIA attributes other than <code>role</code> are prefixed with <code>aria-</code>. Once again, there are a great number of ARIA attributes, but the ones that you'll run into most often are below:
 
-<table class="layout-auto">
-	<caption>Common ARIA attributes</caption>
-	<thead>
-		<tr>
-			<th>Attribute</th><th>Value type</th><th>Description</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td><code>aria-hidden</code></td>
-			<td>Boolean</td>
-			<td>Hides element from screen readers.</td>
-		</tr>
-		<tr>
-			<td><code>aria-label</code></td>
-			<td>String</td>
-			<td>Describes the element's contents.</td>
-		</tr>
-		<tr>
-			<td><code>aria-expanded</code></td>
-			<td>Boolean</td>
-			<td>Indicates whether the element is expanded or not, as in the case of a <code>tabpanel</code>.</td>
-		</tr>
-		<tr>
-			<td><code>aria-required</code></td>
-			<td>Boolean</td>
-			<td>Used for form elements that require the user to enter a value before the form can be submitted. HTML5, of course, provides us with a native <code>required</code> attribute, but support in assistive technologies has shown to be touch-and-go.</td>
-		</tr>
-		<tr>
-			<td><code>aria-selected</code></td>
-			<td>Boolean</td>
-			<td>Indicates that a selectable element has been selected.</td>
-		</tr>
-		<tr>
-			<td><code>aria-live</code></td>
-			<td><code>assertive</code> | <code>polite</code> | <code>off</code></td>
-			<td>Indicates that an area has 'live' content, as in the case of a Twitter feed. A value of <code>assertive</code> will cause a screen reader to interrupt a user at any point to read out the new content regardless of other activity, whereas <code>polite</code> will not interrupt mid-sentence or while typing.</td>
-		</tr>
-		<tr>
-			<td><code>aria-current</code></td>
-			<td><code>page</code> | <code>step</code> | <code>location</code> | <code>date</code> | <code>time</code> | Boolean</td>
-			<td>Indicates that an element in a set is the active indicator, often seen in the case of navigation. If <code>aria-selected</code> is more appropriate, as in the case of a set of tabs, use that.</td>
-		</tr>
-	</tbody>
-</table>
+<div class="layout-auto">
+	<table>
+		<caption>Common ARIA attributes</caption>
+		<thead>
+			<tr>
+				<th>Attribute</th><th>Value type</th><th>Description</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td><code>aria-hidden</code></td>
+				<td>Boolean</td>
+				<td>Hides element from screen readers.</td>
+			</tr>
+			<tr>
+				<td><code>aria-label</code></td>
+				<td>String</td>
+				<td>Describes the element's contents.</td>
+			</tr>
+			<tr>
+				<td><code>aria-expanded</code></td>
+				<td>Boolean</td>
+				<td>Indicates whether the element is expanded or not, as in the case of a <code>tabpanel</code>.</td>
+			</tr>
+			<tr>
+				<td><code>aria-required</code></td>
+				<td>Boolean</td>
+				<td>Used for form elements that require the user to enter a value before the form can be submitted. HTML5, of course, provides us with a native <code>required</code> attribute, but support in assistive technologies has shown to be touch-and-go.</td>
+			</tr>
+			<tr>
+				<td><code>aria-selected</code></td>
+				<td>Boolean</td>
+				<td>Indicates that a selectable element has been selected.</td>
+			</tr>
+			<tr>
+				<td><code>aria-live</code></td>
+				<td><code>assertive</code> | <code>polite</code> | <code>off</code></td>
+				<td>Indicates that an area has 'live' content, as in the case of a Twitter feed. A value of <code>assertive</code> will cause a screen reader to interrupt a user at any point to read out the new content regardless of other activity, whereas <code>polite</code> will not interrupt mid-sentence or while typing.</td>
+			</tr>
+			<tr>
+				<td><code>aria-current</code></td>
+				<td><code>page</code> | <code>step</code> | <code>location</code> | <code>date</code> | <code>time</code> | Boolean</td>
+				<td>Indicates that an element in a set is the active indicator, often seen in the case of navigation. If <code>aria-selected</code> is more appropriate, as in the case of a set of tabs, use that.</td>
+			</tr>
+		</tbody>
+	</table>
+	
+</div>
 
 <!-- Don't forget to check out my exhaustive list of <a href=''>all ARIA attributes and properties</a>. Learn them all and dazzle your friends and co-workers! -->
 
