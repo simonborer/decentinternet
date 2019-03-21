@@ -5,7 +5,7 @@ title: "Accessibile Emojis"
 featuredImage:
   img: images/emoji.jpg
   alt: 'Various emoji'
-atf: "Billions of emojis are used <strong>every single day</strong>. Today we'll look at how you can make them accessible to everyone <span role='img' aria-label='partying face'>🥳</span>"
+atf: "Billions of emojis are used <strong>every single day</strong>. Today we'll look at how you can make them accessible to everyone <span role='img' aria-label='trophy'>🏆</span>"
 ---
 I would wager that the most common type of image in the world today, in terms of sheer volume, are the beloved emoji. People use {{< extlink "https://blog.emojipedia.org/5-billion-emojis-sent-daily-on-messenger/" >}}literally billions of them{{</ extlink >}} everyday.
 
