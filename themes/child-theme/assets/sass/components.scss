@@ -318,7 +318,7 @@ $article-list-title-height--large: 6rem;
     margin-top: 1.5rem;
     font-size: $supplemental-text;
     padding-left: 1rem;
-
+    max-width: 100vw;
     &__list {
         list-style: none;
         margin-left: 0;

@@ -265,3 +265,14 @@ h1 svg {
   width: 0.85em;
   height: 0.85em;
 }
+
+code[class*=language-], pre[class*=language-] {
+  max-width: 100vw;
+}
+
+.code-toolbar:hover>.toolbar {
+  opacity: 0;
+  @include breakpoint{
+    opacity: 1;
+  }
+}
