@@ -245,6 +245,9 @@ main {
     counter-reset: fig;
     min-height: 100vh;
 }
+article {
+  max-width: 100vw;
+}
 figcaption::before {
     counter-increment: fig;
     content: 'Figure ' counter(fig) ':\0020';
