@@ -125,8 +125,6 @@ var localAlertClose = localStorage.getItem('alertClose'),
   alertContainer = document.getElementById('alertContainer'),
   alertCloseButton = document.getElementById('alertClose');
 
-console.log(localAlertClose);
-
 var hideAlert = function(){
   alertContainer.setAttribute('aria-hidden', true);
   alertContainer.setAttribute('hidden', true);
