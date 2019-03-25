@@ -1,5 +1,6 @@
 ---
 title: About
+contact: true
 ---
 
 This site and all its content, unless otherwise noted, are made by me, Simon Borer.

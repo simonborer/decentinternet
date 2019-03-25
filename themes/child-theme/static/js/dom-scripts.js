@@ -125,8 +125,6 @@ var localAlertClose = localStorage.getItem('alertClose'),
   alertContainer = document.getElementById('alertContainer'),
   alertCloseButton = document.getElementById('alertClose');
 
-console.log(localAlertClose);
-
 var hideAlert = function(){
   alertContainer.setAttribute('aria-hidden', true);
   alertContainer.setAttribute('hidden', true);
@@ -140,4 +138,14 @@ if (localAlertClose === 'true') {
 
 if (alertCloseButton) {
   alertCloseButton.onclick = hideAlert;
+}
+
+var goBack = function(){
+  window.history.go(-1);
+}
+
+var backButton = document.getElementById("back");
+
+if (backButton) {
+  backButton.onclick = goBack;
 }

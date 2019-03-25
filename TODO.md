@@ -1,5 +1,3 @@
-- article-ize content
-- sync themes (i.e. fonts)
 - create base starter hugo project
 - add non-coder content
-- add to git
+- netlify contact form

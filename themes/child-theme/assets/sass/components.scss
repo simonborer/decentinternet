@@ -1,3 +1,27 @@
+.button {
+    @include button-anim;
+    padding: .5rem 1rem;
+    cursor: pointer;
+    border: 0 solid transparent;
+    color: $text;
+    font-weight: 900;
+    &-row {
+        margin-top: 2rem;
+        & .button {
+            @include colour-cycle;
+            margin-right: 1rem;
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+        .content & {
+            & .button {
+                border-bottom: 0 solid transparent;
+            }
+        }
+    }
+}
+
 .container {
     @include container;
 
@@ -218,14 +242,17 @@ $article-list-title-height--large: 6rem;
 
 .article-list {
     list-style: none;
-    &__item{
+
+    &__item {
         &:first-child {
             margin-top: 2rem;
+
             .container--home & {
                 margin-top: 0;
             }
         }
     }
+
     &__article {
         max-width: 100vw;
         margin-bottom: 2rem;
@@ -244,11 +271,13 @@ $article-list-title-height--large: 6rem;
         display: inline-block;
         position: relative;
         width: 100%;
+
         &.has-featured-image {
             margin-left: 0;
             height: $article-list-title-height;
-            @include breakpoint(large){
-               height: $article-list-title-height--large; 
+
+            @include breakpoint(large) {
+                height: $article-list-title-height--large;
             }
         }
 
@@ -289,15 +318,17 @@ $article-list-title-height--large: 6rem;
             height: $article-list-title-height;
             object-fit: cover;
             filter: contrast(85%);
-            @include breakpoint(large){
-               height: $article-list-title-height--large; 
+
+            @include breakpoint(large) {
+                height: $article-list-title-height--large;
             }
         }
     }
 
     &__summary {
         padding: 0 1rem;
-        @include breakpoint(large){
+
+        @include breakpoint(large) {
             padding: 0;
         }
     }
@@ -307,7 +338,8 @@ $article-list-title-height--large: 6rem;
         font-style: italic;
         margin-bottom: .75rem;
         padding: 0 1rem;
-        @include breakpoint(large){
+
+        @include breakpoint(large) {
             padding: 0;
         }
     }
@@ -319,6 +351,7 @@ $article-list-title-height--large: 6rem;
     font-size: $supplemental-text;
     padding-left: 1rem;
     max-width: 100vw;
+
     &__list {
         list-style: none;
         margin-left: 0;
@@ -426,7 +459,7 @@ $article-list-title-height--large: 6rem;
     }
 
     & h3 {
-        padding-top: 1.5rem; 
+        padding-top: 1.5rem;
     }
 
     & *+p {
@@ -447,14 +480,14 @@ $article-list-title-height--large: 6rem;
         }
 
         &:nth-of-type(2n-1) {
-            @include breakpoint(small){
+            @include breakpoint(small) {
                 float: left;
                 margin-right: 2rem;
             }
         }
 
         &:nth-of-type(2n) {
-            @include breakpoint(small){
+            @include breakpoint(small) {
                 float: right;
                 margin-left: 2rem;
             }
@@ -468,16 +501,19 @@ $article-list-title-height--large: 6rem;
     & ul {
         margin: 1rem;
     }
+
     & ol {
         margin: 1rem;
     }
-    h2 + figure {
+
+    h2+figure {
         margin-top: 0.5em;
     }
 
     & table {
         margin: 1rem 0 1.5rem;
     }
+
     & caption {
         margin-bottom: .5rem;
     }
@@ -558,24 +594,105 @@ $article-list-title-height--large: 6rem;
     }
 }
 
-@mixin results-table-indicator(){
+@mixin results-table-indicator() {
     text-align: center;
     font-size: 2em;
 }
 
 .results-table {
     margin: 2rem 0;
-    &__heading {
 
-    }
-    &__indicator{
-        &--true{
+    &__heading {}
+
+    &__indicator {
+        &--true {
             @include results-table-indicator;
             background: $green;
         }
-        &--false{
+
+        &--false {
             @include results-table-indicator;
             background: $pink;
         }
     }
+}
+
+@mixin contactInput {
+    max-width: 50vw;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, .12);
+    display: block;
+    margin: 0 0 0 .5rem;
+    padding: 4px 0;
+    width: 70%;
+    background: 0 0;
+    text-align: left;
+    color: inherit;
+
+    &:focus {
+        border-bottom: 2px solid $text;
+        margin-bottom: -1px;
+    }
+}
+
+.section {
+    &--contact {
+        margin-top: 5rem;
+        margin-bottom: 3rem;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        &__heading {
+            display: inline-block;
+            margin-bottom: 2rem;
+            background: $blue;
+            width: 100%;
+            padding: 0.5rem;
+            text-align: center;
+
+            @include breakpoint {
+                margin-bottom: 3rem;
+            }
+        }
+
+        & form {
+            padding: 0 1rem;
+            max-width: 30rem;
+            margin: 0 auto;
+        }
+
+        & fieldset {
+            padding: 0;
+            border: 0 solid transparent;
+        }
+
+        & legend {
+            font-size: $supplemental-text;
+            font-style: italic;
+            margin-bottom: 2rem;
+        }
+
+        & label {
+            display: flex;
+            vertical-align: middle;
+            justify-content: space-between;
+            margin-bottom: 1rem;
+        }
+
+        & input {
+            @include contactInput;
+        }
+
+        & textarea {
+            @include contactInput;
+        }
+
+        & button {
+            background: $green;
+            margin-top: 1rem;
+            float: right;
+        }
+    }
+
 }
