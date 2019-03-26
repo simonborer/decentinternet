@@ -1,3 +1,8 @@
+{{ $title := print .Title " | " .Site.Title }}
+{{ if .IsHome }}
+  {{ $title = .Site.Title }}
+{{ end }}
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,6 +26,22 @@
   <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="theme-color" content="#ffffff">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@decentinternet">
+  <meta name="twitter:creator" content="@decentinternet">
+  <meta name="twitter:title" content="{{ $title }}">
+  {{ if .IsHome }}
+    {{ with .Site.Params.homeMetaContent }}
+      <meta name="twitter:description" content="{{ . | plainify }}">
+    {{ end }}
+  {{ else if .Params.atf }}
+      <meta name="twitter:description" content="{{ .Params.atf | plainify }}">
+  {{ end }}
+  {{ if .Params.featuredImage }}
+      <meta name="twitter:image" content="{{ .Permalink }}{{ .Params.RelPermalink }}{{ .Params.featuredImage.img }}">
+  {{ else }}
+      <meta name="twitter:image" content="https://www.decentinternet.com/images/logo.svg">
+  {{ end }}
 
   {{ $sassTemplate := resources.Get "sass/template-styles.scss" }}
   {{ $stylesTemplate := $sassTemplate | resources.ExecuteAsTemplate "main.scss" . }}
@@ -33,10 +54,5 @@
     * { background-color: inherit }
     img:not([src*=".svg"]), .colors, iframe, .demo-container { filter: invert(100%) }
   </style>
-
-  {{ $title := print .Title " | " .Site.Title }}
-  {{ if .IsHome }}
-    {{ $title = .Site.Title }}
-  {{ end }}
   <title>{{ $title }}</title>
 </head>
