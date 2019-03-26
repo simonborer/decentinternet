@@ -1,7 +1,7 @@
 ---
 date: "2019-02-28"
 tags: ["accessibility", "ARIA", "emojis"]
-title: "Accessibile Emojis"
+title: "Accessible Emojis"
 featuredImage:
   img: images/emoji.jpg
   alt: 'Various emoji'
@@ -9,7 +9,7 @@ atf: "Billions of emojis are used <strong>every single day</strong>. Today we'll
 ---
 I would wager that the most common type of image in the world today, in terms of sheer volume, are the beloved emoji. People use {{< extlink "https://blog.emojipedia.org/5-billion-emojis-sent-daily-on-messenger/" >}}literally billions of them{{</ extlink >}} everyday.
 
-Full assistive technology default support for emojis is {{< extlink "https://microsoftaccessibility.uservoice.com/forums/307429-microsoft-accessibility-feedback/suggestions/33735976-support-emojis-with-screen-reader" green >}}not there yet{{</ extlink >}}, but with the help of <a href="{{ ref /intro-to-aria }}">ARIA</a>, we can make them accessible! <span role="img" aria-label="beaming face with smiling eyes">😁</span>
+Full assistive technology default support for emojis is {{< extlink "https://microsoftaccessibility.uservoice.com/forums/307429-microsoft-accessibility-feedback/suggestions/33735976-support-emojis-with-screen-reader" green >}}not there yet{{</ extlink >}}, but with the help of <a href="../intro-to-aria/">ARIA</a>, we can make them accessible! <span role="img" aria-label="beaming face with smiling eyes">😁</span>
 
 <strong>1.</strong> Take your unicode emoji…
 
