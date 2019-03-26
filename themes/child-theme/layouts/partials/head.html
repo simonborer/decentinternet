@@ -3,6 +3,23 @@
   {{ $title = .Site.Title }}
 {{ end }}
 
+{{ $description := .Site.Params.homeMetaContent }}
+{{ if .Params.atf }}
+  {{ $description = .Params.atf }}
+{{ end }}
+
+{{ $featuredImage := "https://www.decentinternet.com/images/logo.svg" }}
+{{ if .Params.featuredImage }}
+  {{ $featuredImage = print .Permalink .Params.featuredImage.img }}
+{{ end }}
+
+{{ $featuredImageAlt := "Logo adapted from accessibleicon.org" }}
+{{ if .Params.featuredImage }}
+  {{ $featuredImageAlt = print .Params.featuredImage.alt }}
+{{ end }}
+
+{{ $themeColour := "#fefaf1" }}
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,38 +27,32 @@
 
   {{ .Hugo.Generator }}
   <link rel="canonical" href="{{ .Permalink }}">
-
-  {{ if .IsHome }}
-    {{ with .Site.Params.homeMetaContent }}
-      <meta name="description" content="{{ . | plainify }}">
-    {{ end }}
-  {{ else if .Params.atf }}
-      <meta name="description" content="{{ .Params.atf | plainify }}">
-  {{ end }}
+  <meta name="description" content="{{ $description | plainify }}">
 
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
   <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
-  <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="theme-color" content="#ffffff">
+  <meta name="msapplication-TileColor" content="{{ $themeColour }}">
+  <meta name="theme-color" content="{{ $themeColour }}">
+  <meta property="og:title" content="{{ $title }}" />
+  <meta property="og:description" content="{{ $description | plainify }}" />
+  {{ if eq .Section "post" }}
+  <meta property="og:type" content="article" />
+  {{ else }}
+  <meta property="og:type" content="website" />
+  {{ end }} 
+  <meta property="og:url" content="{{ .Permalink }}" />
+  <meta property="og:image" content="{{ $featuredImage }}" />
+  <meta property="og:image:alt" content="{{ $featuredImageAlt }}" />
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@decentinternet">
   <meta name="twitter:creator" content="@decentinternet">
   <meta name="twitter:title" content="{{ $title }}">
-  {{ if .IsHome }}
-    {{ with .Site.Params.homeMetaContent }}
-      <meta name="twitter:description" content="{{ . | plainify }}">
-    {{ end }}
-  {{ else if .Params.atf }}
-      <meta name="twitter:description" content="{{ .Params.atf | plainify }}">
-  {{ end }}
-  {{ if .Params.featuredImage }}
-      <meta name="twitter:image" content="{{ .Permalink }}{{ .Params.RelPermalink }}{{ .Params.featuredImage.img }}">
-  {{ else }}
-      <meta name="twitter:image" content="https://www.decentinternet.com/images/logo.svg">
-  {{ end }}
+  <meta name="twitter:description" content="{{ $description | plainify }}">
+  <meta name="twitter:image" content="{{ $featuredImage }}">
+  <meta name="twitter:image:alt" content="{{ $featuredImageAlt }}">
 
   {{ $sassTemplate := resources.Get "sass/template-styles.scss" }}
   {{ $stylesTemplate := $sassTemplate | resources.ExecuteAsTemplate "main.scss" . }}
