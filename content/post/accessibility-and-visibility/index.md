@@ -57,7 +57,7 @@ Here we can quickly scan to see what properties affect screen readers, prevent e
 		<td class="results-table__indicator--false">☒</td>
 		<td class="results-table__indicator--false">☑</td>
 	</tr>
-  <tfoot><td id='asterisk'>* See different techniques below.</td></tfoot>
+  <tfoot><td id='asterisk' colspan="4">* See different techniques below.</td></tfoot>
 </table>
 
 Wondering exactly <em>which</em> assistive technologies support <em>which</em> properties? While there's unfortunately no service as robust as {{< extlink "https://caniuse.com" >}}caniuse.com{{</ extlink >}} for screenreaders, {{< extlink "https://twitter.com/stevefaulkner" >}}Steve Faulkner{{</ extlink >}} is doing really incredible work over at {{< extlink "https://www.html5accessibility.com/">}}html5accessibility.com{{</ extlink >}} in documenting exactly that. Check out his {{< extlink "https://github.com/stevefaulkner/HTML5accessibility/blob/gh-pages/tests/hidden-2016.html" >}}tests for visibility techniques{{</ extlink >}}.
