@@ -3,7 +3,7 @@ title: About
 contact: true
 ---
 
-This site and all its content, unless otherwise noted, are made by me, <a href="https://www.simonborer.com" rel="noopener nofollow" target="_blank"></a>Simon Borer.
+This site and all its content, unless otherwise noted, are made by me, <a href="https://www.simonborer.com" rel="noopener nofollow" target="_blank" class="blue">Simon</a> Borer.
 
 I am an educator and web developer based in Toronto, Ontario. If you'd like to hire me, please <a href="#contact">get in touch</a>!
 
