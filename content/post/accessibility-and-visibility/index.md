@@ -12,6 +12,8 @@ There are times when you need to pick and choose when you're going to hide thing
 
 ## Visibility Cheat Sheet
 
+Here we can quickly scan to see what properties affect screen readers, prevent elements from being accessible by the <code>tab</code> key, or remove them from the visual flow (i.e. taking up layout space, whether or not they are painted).
+
 <table class="results-table">
 	<tr>
 		<th></th>
@@ -50,11 +52,12 @@ There are times when you need to pick and choose when you're going to hide thing
 		<td class="results-table__indicator--false">☑</td>
 	</tr>
 	<tr>
-		<th scope="col">Techniques for visually hiding block-level elements</th>
+		<th scope="col">Techniques<span aria-labelledby="asterisk">*</span> for visually hiding block-level elements</th>
 		<td class="results-table__indicator--false">☒</td>
 		<td class="results-table__indicator--false">☒</td>
 		<td class="results-table__indicator--false">☑</td>
 	</tr>
+  <tfoot><td id='asterisk'>* See different techniques below.</td></tfoot>
 </table>
 
 Wondering exactly <em>which</em> assistive technologies support <em>which</em> properties? While there's unfortunately no service as robust as {{< extlink "https://caniuse.com" >}}caniuse.com{{</ extlink >}} for screenreaders, {{< extlink "https://twitter.com/stevefaulkner" >}}Steve Faulkner{{</ extlink >}} is doing really incredible work over at {{< extlink "https://www.html5accessibility.com/">}}html5accessibility.com{{</ extlink >}} in documenting exactly that. Check out his {{< extlink "https://github.com/stevefaulkner/HTML5accessibility/blob/gh-pages/tests/hidden-2016.html" >}}tests for visibility techniques{{</ extlink >}}.
