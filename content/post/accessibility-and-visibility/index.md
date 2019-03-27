@@ -16,8 +16,8 @@ There are times when you need to pick and choose when you're going to hide thing
 	<tr>
 		<th></th>
 		<th scope="col">Hidden from screenreaders</th>
-		<th scope="col">Removed from the DOM</th>
-		<th scope="col">Invisible, but still occupies layout space</th>
+		<th scope="col">Removed from the tab flow</th>
+		<th scope="col">Removed from the visual flow</th>
 	</tr>
 	<tr>
 		<th scope="col"><code>aria-hidden="true"</code></th>
@@ -29,31 +29,31 @@ There are times when you need to pick and choose when you're going to hide thing
 		<th scope="col">Native HTML <code>hidden</code> attribute</th>
 		<td class="results-table__indicator--true">☑</td>
 		<td class="results-table__indicator--true">☑</td>
-		<td class="results-table__indicator--false">☒</td>
+		<td class="results-table__indicator--false">☑</td>
 	</tr>
 	<tr>
 		<th scope="col">CSS <code>display: none;</code></th>
 		<td class="results-table__indicator--true">☑</td>
 		<td class="results-table__indicator--true">☑</td>
-		<td class="results-table__indicator--false">☒</td>
+		<td class="results-table__indicator--false">☑</td>
 	</tr>
 	<tr>
 		<th scope="col">CSS <code>visibility: hidden;</code></th>
 		<td class="results-table__indicator--true">☑</td>
 		<td class="results-table__indicator--true">☑</td>
-		<td class="results-table__indicator--false">☒</td>
+		<td class="results-table__indicator--true">☒</td>
 	</tr>
 	<tr>
-		<th scope="col">CSS <code>font-size:0;</code>, for inline text & elements.</th>
+		<th scope="col">CSS <code>font-size:0;</code> (for inline elements)</th>
 		<td class="results-table__indicator--false">☒</td>
 		<td class="results-table__indicator--false">☒</td>
-		<td class="results-table__indicator--false">☒</td>
+		<td class="results-table__indicator--false">☑</td>
 	</tr>
 	<tr>
 		<th scope="col">Techniques for visually hiding block-level elements</th>
 		<td class="results-table__indicator--false">☒</td>
 		<td class="results-table__indicator--false">☒</td>
-		<td class="results-table__indicator--false">☒</td>
+		<td class="results-table__indicator--false">☑</td>
 	</tr>
 </table>
 
