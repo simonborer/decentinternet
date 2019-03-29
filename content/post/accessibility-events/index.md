@@ -1,6 +1,6 @@
 ---
 date: "2019-03-29"
-tags: ["accessibility", "code", "iOS"]
+tags: ["accessibility", "code", "iOS", "assistive technology"]
 title: "iOS 12.2 Tracks Disability"
 atf: "iOS 12.2 has quietly introduced a default setting that tracks usage of assistive technology. This is a terrible choice for accessibility."
 featuredImage:
@@ -23,6 +23,8 @@ href="https://unsplash.com/photos/aZ9X3L1Va2Y"
 title="Photo by Nathan Dumlao on Unsplash"
 options="700x" >}}
 
-I don't want to speak from a user's experience on this one, but speaking as a developer <strong>why would we make this mistake again?</strong> I've lived through the days of browser sniffing and device detection, and <strong>those were bad times</strong>. We can give everyone a good experience on the web by making good websites, by embracing the open standards that make the internet a place where we build things that can get used by other people in ways we can't foresee and that is <strong>delightful</strong>.
+I don't want to speak from a user's experience on this one, but speaking as a developer <strong>why would we make this mistake again?</strong> I've lived through the days of browser sniffing and device detection, making <em>whole separate websites for mobile</em>, and <strong>those were bad times</strong>. We can give everyone a good experience on the web by making good websites, by embracing the open standards that make the internet a place where we build things that can get used by other people in ways we can't foresee and that is <strong>delightful</strong>.
+
+I can't go in to a technical breakdown of Apple's approach just yet, as they don't appear to have documented the feature. I can tell you that they've decided to release this feature undocumented while users report {{< extlink "https://www.applevis.com/forum/ios-ios-app-discussion/vo-skipping-top-after-ios-1211-update" >}}Voiceover bugs have gone unresolved{{</ extlink >}} in this release.
 
 If we go back to tiered experiences, we return to the days of prioritizing one group of users over another, and that is a grim thought. 
