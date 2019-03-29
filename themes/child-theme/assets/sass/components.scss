@@ -413,6 +413,7 @@ $article-list-title-height--large: 6rem;
         color: $text;
         border-bottom: 1px solid $text-light;
         text-decoration: none;
+        line-height: 1em;
 
         &:nth-of-type(4n) {
             background: $blue;
