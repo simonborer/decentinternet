@@ -15,48 +15,48 @@ There are times when you need to pick and choose when you're going to hide thing
 Here we can quickly scan to see what properties affect screen readers, prevent elements from being accessible by the <code>tab</code> key, or remove them from the visual flow (i.e. taking up layout space, whether or not they are painted).
 
 <table class="results-table">
-	<tr>
-		<th></th>
-		<th scope="col">Hidden from screenreaders</th>
-		<th scope="col">Removed from the tab flow</th>
-		<th scope="col">Removed from the visual flow</th>
-	</tr>
-	<tr>
-		<th scope="col"><code>aria-hidden="true"</code></th>
-		<td class="results-table__indicator--true">☑</td>
-		<td class="results-table__indicator--false">☒</td>
-		<td class="results-table__indicator--false">☒</td>
-	</tr>
-		<tr>
-		<th scope="col">Native HTML <code>hidden</code> attribute</th>
-		<td class="results-table__indicator--true">☑</td>
-		<td class="results-table__indicator--true">☑</td>
-		<td class="results-table__indicator--false">☑</td>
-	</tr>
-	<tr>
-		<th scope="col">CSS <code>display: none;</code></th>
-		<td class="results-table__indicator--true">☑</td>
-		<td class="results-table__indicator--true">☑</td>
-		<td class="results-table__indicator--false">☑</td>
-	</tr>
-	<tr>
-		<th scope="col">CSS <code>visibility: hidden;</code></th>
-		<td class="results-table__indicator--true">☑</td>
-		<td class="results-table__indicator--true">☑</td>
-		<td class="results-table__indicator--true">☒</td>
-	</tr>
-	<tr>
-		<th scope="col">CSS <code>font-size:0;</code> (for inline elements)</th>
-		<td class="results-table__indicator--false">☒</td>
-		<td class="results-table__indicator--false">☒</td>
-		<td class="results-table__indicator--false">☑</td>
-	</tr>
-	<tr>
-		<th scope="col">Techniques<span aria-labelledby="asterisk">*</span> for visually hiding block-level elements</th>
-		<td class="results-table__indicator--false">☒</td>
-		<td class="results-table__indicator--false">☒</td>
-		<td class="results-table__indicator--false">☑</td>
-	</tr>
+  <tr>
+    <th></th>
+    <th scope="col">Hidden from screenreaders</th>
+    <th scope="col">Removed from the tab flow</th>
+    <th scope="col">Removed from the visual flow</th>
+  </tr>
+  <tr>
+    <th scope="col"><code>aria-hidden="true"</code></th>
+    <td class="results-table__indicator--true">☑</td>
+    <td class="results-table__indicator--false">☒</td>
+    <td class="results-table__indicator--false">☒</td>
+  </tr>
+    <tr>
+    <th scope="col">Native HTML <code>hidden</code> attribute</th>
+    <td class="results-table__indicator--true">☑</td>
+    <td class="results-table__indicator--true">☑</td>
+    <td class="results-table__indicator--false">☑</td>
+  </tr>
+  <tr>
+    <th scope="col">CSS <code>display: none;</code></th>
+    <td class="results-table__indicator--true">☑</td>
+    <td class="results-table__indicator--true">☑</td>
+    <td class="results-table__indicator--false">☑</td>
+  </tr>
+  <tr>
+    <th scope="col">CSS <code>visibility: hidden;</code></th>
+    <td class="results-table__indicator--true">☑</td>
+    <td class="results-table__indicator--true">☑</td>
+    <td class="results-table__indicator--true">☒</td>
+  </tr>
+  <tr>
+    <th scope="col">CSS <code>font-size:0;</code> (for inline elements)</th>
+    <td class="results-table__indicator--false">☒</td>
+    <td class="results-table__indicator--false">☒</td>
+    <td class="results-table__indicator--false">☑</td>
+  </tr>
+  <tr>
+    <th scope="col">Techniques<span aria-labelledby="asterisk">*</span> for visually hiding block-level elements</th>
+    <td class="results-table__indicator--false">☒</td>
+    <td class="results-table__indicator--false">☒</td>
+    <td class="results-table__indicator--false">☑</td>
+  </tr>
   <tfoot><td id='asterisk' colspan="4">* See different techniques below.</td></tfoot>
 </table>
 
@@ -67,8 +67,8 @@ Wondering exactly <em>which</em> assistive technologies support <em>which</em> p
 Let's take a look at the different approaches of popular front-end libraries towards
 
 <ul>
-	<li>showing content only to screen readers, and</li>
-	<li>showing content only when focused via the keyboard (a.k.a 'tabbing').</li>
+  <li>showing content only to screen readers, and</li>
+  <li>showing content only when focused via the keyboard (a.k.a 'tabbing').</li>
 </ul>
 
 Note that I've taken some small liberties with the property order, strictly for the purposes of readability in comparing the different libraries.
@@ -79,27 +79,27 @@ Before we look at the libraries' approaches, for context let's look at WebAIM's 
 
 <pre><code class="language-scss">.webaim {
   /**  
-  	Declaring fixed dimensions avoids certain 
-  	opinionated browsers removing your content 
-  	from the DOM. 
+    Declaring fixed dimensions avoids certain 
+    opinionated browsers removing your content 
+    from the DOM. 
   */ 
   height: 1px;
   width: 1px;
   overflow: hidden;
   /**
-	Here we position the element well offscreen
-	and remove it from the document flow.
+  Here we position the element well offscreen
+  and remove it from the document flow.
   */
   left: -10000px;
   position: absolute;
   top: auto;
   &:focus {
-	/**
-	  On the focus event, we return the element
-	  to the document flow and let the content
-	  set the dimensions. Note that a static position
-	  means that the 'top' property has no effect.
-	 */
+  /**
+    On the focus event, we return the element
+    to the document flow and let the content
+    set the dimensions. Note that a static position
+    means that the 'top' property has no effect.
+   */
     height: auto;
     position: static;
     width: auto;

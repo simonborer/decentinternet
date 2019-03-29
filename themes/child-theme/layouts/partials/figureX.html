@@ -1,0 +1,45 @@
+{{ $img := .Get "img" }}
+{{ $caption := .Get "caption" }}
+{{ $command := .Get "command" }}
+{{ $options := .Get "options" }}
+{{ $class := .Get "class" }}
+{{ $alt := .Get "alt" }}
+{{ $title := .Get "title" }}
+
+{{ $original := .Page.Resources.GetMatch (printf "*%s*" $img) }}
+{{ $new := "" }}
+
+{{ if eq $command "Fit" }}
+  {{ $new = $original.Fit $options }}
+{{ else if eq $command "Fill" }}
+  {{ $new = $original.Fill $options }}
+{{ else if eq $command "Resize" }}
+  {{ $new = $original.Resize $options }}
+{{ else if eq $command "Original" }}
+  {{ $new = $original }}
+{{ else }}
+  {{ errorf "Invalid image processing command: Must be one of Fit, Fill, Resize, Original." }}
+{{ end }}
+
+{{ $mediaSubType := $new.MediaType.SubType }}
+{{ $webp := "" }}
+{{ $webpPermalink := "" }}
+{{ if or (eq $mediaSubType "png") (eq $mediaSubType "jpeg") }}
+  {{ $webp = true }}
+  {{ $webpPermalink = replaceRE "(\\.)(jpg|png)\\b" ".webp" $original.Permalink }}
+{{ end }}
+
+<figure class="{{ $class }}" role="group" aria-describedby="caption-{{ $caption | md5 }}">
+  <a target="_blank" href="{{ $original.Permalink }}" class="img-link">
+    <picture>
+      {{ if $webp }}
+      <source srcset="{{ $webpPermalink }}" type="image/webp">
+      {{ end }}
+      <source srcset="{{ $new.Permalink }}" type="{{ $new.MediaType }}"> 
+      <img title="{{ $title }}" alt="{{ $alt }} - Link opens in a new tab." src="{{ $new.Permalink }}" class="personal-links__img" alt="Me, Simon Borer, with a bird on my shoulder.">
+    </picture>
+  </a>
+  <figcaption id="caption-{{ $caption | md5 }}">
+    {{ $caption | markdownify }}
+  </figcaption>
+</figure>

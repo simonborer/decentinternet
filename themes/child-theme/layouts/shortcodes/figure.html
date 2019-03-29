@@ -21,9 +21,23 @@
   {{ errorf "Invalid image processing command: Must be one of Fit, Fill, Resize, Original." }}
 {{ end }}
 
+{{ $mediaSubType := $new.MediaType.SubType }}
+{{ $webp := "" }}
+{{ $webpPermalink := "" }}
+{{ if or (eq $mediaSubType "png") (eq $mediaSubType "jpeg") }}
+  {{ $webp = true }}
+  {{ $webpPermalink = replaceRE "(\\.)(jpg|png)\\b" ".webp" $original.Permalink }}
+{{ end }}
+
 <figure class="{{ $class }}" role="group" aria-describedby="caption-{{ $caption | md5 }}">
   <a target="_blank" href="{{ $original.Permalink }}" class="img-link">
-    <img title="{{ $title }}" alt="{{ $alt }} - Link opens in a new tab." src="{{ $new.Permalink }}">
+    <picture>
+      {{ if $webp }}
+      <source srcset="{{ $webpPermalink }}" type="image/webp">
+      {{ end }}
+      <source srcset="{{ $new.Permalink }}" type="{{ $new.MediaType }}"> 
+      <img title="{{ $title }}" alt="{{ $alt }} - Link opens in a new tab." src="{{ $new.Permalink }}" class="personal-links__img">
+    </picture>
   </a>
   <figcaption id="caption-{{ $caption | md5 }}">
     {{ $caption | markdownify }}

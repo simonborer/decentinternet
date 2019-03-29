@@ -1,0 +1,24 @@
+{{ $img := .image }}
+{{ $options := .options }}
+{{ $strMediaSubType := "" }}
+{{ $mediaSubType := split $img.img "." }}
+{{ $mediaSubType = last 1 $mediaSubType }}
+{{ $mediaSubType := delimit $mediaSubType "" }}
+{{ $mediaSubType := printf "%s" $mediaSubType }}
+{{ $permalink := print .permalink $img.img }}
+{{ if (eq $mediaSubType "jpg") }}
+  {{ $strMediaSubType = "jpeg" }}
+{{ end }}
+{{ $webp := "" }}
+{{ $webpPermalink := "" }}
+{{ if or (eq $strMediaSubType "png") (eq $strMediaSubType "jpeg") }}
+  {{ $webp = true }}
+  {{ $webpPermalink = replaceRE "(\\.)(jpg|png)\\b" ".webp" $permalink }}
+{{ end }}
+<picture>
+  {{ if $webp }}
+    <source srcset="{{ $webpPermalink }}" type="image/webp">
+  {{ end }}
+  <source srcset="{{.permalink}}{{ $img.img }}" type="image/{{ $strMediaSubType }}"> 
+  <img class="{{ .class }}" alt="{{ .image.alt }}" src="{{ $permalink }}" class="personal-links__img">
+</picture>

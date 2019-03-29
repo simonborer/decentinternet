@@ -8,7 +8,7 @@
         <article class="article-list__article">
           <h2 class="article-list__title {{ if .Params.featuredImage }}has-featured-image{{end}}">
           {{ if .Params.featuredImage }}
-          <img class="article-list__title-img" src="{{ .Permalink }}{{ .Params.featuredImage.img }}" alt="{{ .Params.featuredImage.alt }}">
+          {{ partial "figure.html" ( dict "context" . "image" .Params.featuredImage "permalink" .Permalink "class" "article-list__title-img" ) }}
           {{ end }}
             <a class="article-list__title-anchor {{ if .Params.featuredImage }}has-featured-image{{end}}" href="{{ .Permalink }}">
               {{ .Title }}

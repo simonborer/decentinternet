@@ -1,6 +1,6 @@
 var gulp = require('gulp'),
   imagemin = require('gulp-imagemin'),
-  imageminWebp = require('imagemin-webp'),
+  webp = require('gulp-webp'),
   imageminJpegtran = require('imagemin-jpegtran'),
   imageminPngquant = require('imagemin-pngquant'),
   imageminGifSicle = require('imagemin-gifsicle'),
@@ -19,7 +19,7 @@ var paths = {
 };
 
 function images(folder_path) {
-  return gulp.src(paths.images.src + '/' + folder_path + '/images/*.jpg')
+  return gulp.src(paths.images.src + '/' + folder_path + '/images/*.{png,jpg,gif,svg}')
   .pipe(newer(paths.images.src + '/' + folder_path + '/images/'))
   .pipe(imageresize({
       width : 600,
@@ -27,9 +27,19 @@ function images(folder_path) {
       upscale : false
     }))
   .pipe(imagemin(
-    [imageminJpegtran({progressive: true})],
+    [
+      imageminJpegtran({progressive: true}),
+      imageminPngquant({
+        quality: [0.6, 0.8]
+      }),
+      imageminSvgo({
+        plugins: [{removeViewBox: false}]
+      }),
+      imageminGifSicle()
+    ],
     {verbose: true}
   ))
+  .pipe(webp())
   .pipe(gulp.dest(paths.images.dest + '/' + folder_path + '/images/'));
 }
 
