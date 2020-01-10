@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Aria on Decent Internet</title>
+    <title>ARIA on Decent Internet</title>
     <link>https://www.decentinternet.com/tags/aria/</link>
-    <description>Recent content in Aria on Decent Internet</description>
+    <description>Recent content in ARIA on Decent Internet</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 19 Mar 2019 00:00:00 +0000</lastBuildDate>
@@ -23,7 +23,7 @@ Let&amp;rsquo;s take a step back and learn a little about the DOM before we dive
     </item>
     
     <item>
-      <title>Accessibile Emojis</title>
+      <title>Accessible Emojis</title>
       <link>https://www.decentinternet.com/emojis/</link>
       <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
       
@@ -41,7 +41,7 @@ Full assistive technology default support for emojis is not there yetLink opens 
       
       <guid>https://www.decentinternet.com/accessibility-and-visibility/</guid>
       <description>There are times when you need to pick and choose when you&amp;rsquo;re going to hide things visually, remove it from the DOM, hide things from screen readers, or show things (like text alternatives, or keyboard-focused content) only to those using assistive technology. Let&amp;rsquo;s take a look at the different techniques that are available to us.
-Visibility Cheat Sheet   Hidden from screenreaders Removed from the DOM Invisible, but still occupies layout space   aria-hidden=&#34;</description>
+Visibility Cheat Sheet Here we can quickly scan to see what properties affect screen readers, prevent elements from being accessible by the tab key, or remove them from the visual flow (i.</description>
     </item>
     
   </channel>

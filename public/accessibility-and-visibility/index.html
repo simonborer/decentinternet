@@ -1,29 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+  
+
+
+
+
+  
+
+
+
+
+  
+
+
+
+
+  
+
+
+
+
+<head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <meta name="generator" content="Hugo 0.54.0" />
+  <meta name="generator" content="Hugo 0.58.0" />
   <link rel="canonical" href="https://www.decentinternet.com/accessibility-and-visibility/">
-
-  
-      <meta name="description" content="There are lots of options in front-end code for controlling visibility, including native attributes, CSS property values, and helper classes from popular front-end libraries like Bootstrap, Foundation and HTML Boilerplate. It can be tough to remember which option shows or hides things for whom. Here&#39;s a little cheat sheet and demo to help!">
-  
+  <meta name="description" content="There are lots of options in front-end code for controlling visibility, including native attributes, CSS property values, and helper classes from popular front-end libraries like Bootstrap, Foundation and HTML Boilerplate. It can be tough to remember which option shows or hides things for whom. Here&#39;s a little cheat sheet and demo to help!">
 
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
   <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
-  <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="theme-color" content="#ffffff">
+  <meta name="msapplication-TileColor" content="#fefaf1">
+  <meta name="theme-color" content="#fefaf1">
+  <meta property="og:title" content="Accessibility and Visibility | Decent Internet" />
+  <meta property="og:description" content="There are lots of options in front-end code for controlling visibility, including native attributes, CSS property values, and helper classes from popular front-end libraries like Bootstrap, Foundation and HTML Boilerplate. It can be tough to remember which option shows or hides things for whom. Here&#39;s a little cheat sheet and demo to help!" />
+  
+  <meta property="og:type" content="article" />
+   
+  <meta property="og:url" content="https://www.decentinternet.com/accessibility-and-visibility/" />
+  <meta property="og:image" content="https://www.decentinternet.com/accessibility-and-visibility/images/bush-in-fog.jpg" />
+  <meta property="og:image:alt" content="Bush in fog" />
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@decentinternet">
+  <meta name="twitter:creator" content="@decentinternet">
+  <meta name="twitter:title" content="Accessibility and Visibility | Decent Internet">
+  <meta name="twitter:description" content="There are lots of options in front-end code for controlling visibility, including native attributes, CSS property values, and helper classes from popular front-end libraries like Bootstrap, Foundation and HTML Boilerplate. It can be tough to remember which option shows or hides things for whom. Here&#39;s a little cheat sheet and demo to help!">
+  <meta name="twitter:image" content="https://www.decentinternet.com/accessibility-and-visibility/images/bush-in-fog.jpg">
+  <meta name="twitter:image:alt" content="Bush in fog">
 
   
   
   
-  <link rel="stylesheet" href="https://www.decentinternet.com/main.min.797d4140fb560a8a677dd9f97af26eff82b5a99bb2b61de8b1093d462264bb97.css" media="screen">
+  <link rel="stylesheet" href="https://www.decentinternet.com/main.min.1353a88a0c62cf6816f349c5d9d7efe7391943c928bd809b9272943048477f9b.css" media="screen">
 
 
   <style id="inverter" media="none">
@@ -31,9 +63,6 @@
     * { background-color: inherit }
     img:not([src*=".svg"]), .colors, iframe, .demo-container { filter: invert(100%) }
   </style>
-
-  
-  
   <title>Accessibility and Visibility | Decent Internet</title>
 </head>
 
@@ -246,49 +275,52 @@
 
 <h2 id="visibility-cheat-sheet">Visibility Cheat Sheet</h2>
 
+<p>Here we can quickly scan to see what properties affect screen readers, prevent elements from being accessible by the <code>tab</code> key, or remove them from the visual flow (i.e. taking up layout space, whether or not they are painted).</p>
+
 <table class="results-table">
+  <tr>
+    <th></th>
+    <th scope="col">Hidden from screenreaders</th>
+    <th scope="col">Removed from the tab flow</th>
+    <th scope="col">Removed from the visual flow</th>
+  </tr>
+  <tr>
+    <th scope="col"><code>aria-hidden="true"</code></th>
+    <td class="results-table__indicator--true">☑</td>
+    <td class="results-table__indicator--false">☒</td>
+    <td class="results-table__indicator--false">☒</td>
+  </tr>
     <tr>
-        <th></th>
-        <th scope="col">Hidden from screenreaders</th>
-        <th scope="col">Removed from the DOM</th>
-        <th scope="col">Invisible, but still occupies layout space</th>
-    </tr>
-    <tr>
-        <th scope="col"><code>aria-hidden="true"</code></th>
-        <td class="results-table__indicator--true">☑</td>
-        <td class="results-table__indicator--false">☒</td>
-        <td class="results-table__indicator--false">☒</td>
-    </tr>
-        <tr>
-        <th scope="col">Native HTML <code>hidden</code> attribute</th>
-        <td class="results-table__indicator--true">☑</td>
-        <td class="results-table__indicator--true">☑</td>
-        <td class="results-table__indicator--false">☒</td>
-    </tr>
-    <tr>
-        <th scope="col">CSS <code>display: none;</code></th>
-        <td class="results-table__indicator--true">☑</td>
-        <td class="results-table__indicator--true">☑</td>
-        <td class="results-table__indicator--false">☒</td>
-    </tr>
-    <tr>
-        <th scope="col">CSS <code>visibility: hidden;</code></th>
-        <td class="results-table__indicator--true">☑</td>
-        <td class="results-table__indicator--true">☑</td>
-        <td class="results-table__indicator--false">☒</td>
-    </tr>
-    <tr>
-        <th scope="col">CSS <code>font-size:0;</code>, for inline text & elements.</th>
-        <td class="results-table__indicator--false">☒</td>
-        <td class="results-table__indicator--false">☒</td>
-        <td class="results-table__indicator--false">☒</td>
-    </tr>
-    <tr>
-        <th scope="col">Techniques for visually hiding block-level elements</th>
-        <td class="results-table__indicator--false">☒</td>
-        <td class="results-table__indicator--false">☒</td>
-        <td class="results-table__indicator--false">☒</td>
-    </tr>
+    <th scope="col">Native HTML <code>hidden</code> attribute</th>
+    <td class="results-table__indicator--true">☑</td>
+    <td class="results-table__indicator--true">☑</td>
+    <td class="results-table__indicator--false">☑</td>
+  </tr>
+  <tr>
+    <th scope="col">CSS <code>display: none;</code></th>
+    <td class="results-table__indicator--true">☑</td>
+    <td class="results-table__indicator--true">☑</td>
+    <td class="results-table__indicator--false">☑</td>
+  </tr>
+  <tr>
+    <th scope="col">CSS <code>visibility: hidden;</code></th>
+    <td class="results-table__indicator--true">☑</td>
+    <td class="results-table__indicator--true">☑</td>
+    <td class="results-table__indicator--true">☒</td>
+  </tr>
+  <tr>
+    <th scope="col">CSS <code>font-size:0;</code> (for inline elements)</th>
+    <td class="results-table__indicator--false">☒</td>
+    <td class="results-table__indicator--false">☒</td>
+    <td class="results-table__indicator--false">☑</td>
+  </tr>
+  <tr>
+    <th scope="col">Techniques<span aria-labelledby="asterisk">*</span> for visually hiding block-level elements</th>
+    <td class="results-table__indicator--false">☒</td>
+    <td class="results-table__indicator--false">☒</td>
+    <td class="results-table__indicator--false">☑</td>
+  </tr>
+  <tfoot><td id='asterisk' colspan="4">* See different techniques below.</td></tfoot>
 </table>
 
 <p>Wondering exactly <em>which</em> assistive technologies support <em>which</em> properties? While there&rsquo;s unfortunately no service as robust as 
@@ -310,8 +342,8 @@
 <p>Let&rsquo;s take a look at the different approaches of popular front-end libraries towards</p>
 
 <ul>
-    <li>showing content only to screen readers, and</li>
-    <li>showing content only when focused via the keyboard (a.k.a 'tabbing').</li>
+  <li>showing content only to screen readers, and</li>
+  <li>showing content only when focused via the keyboard (a.k.a 'tabbing').</li>
 </ul>
 
 <p>Note that I&rsquo;ve taken some small liberties with the property order, strictly for the purposes of readability in comparing the different libraries.</p>
@@ -333,19 +365,19 @@
   width: 1px;
   overflow: hidden;
   /**
-    Here we position the element well offscreen
-    and remove it from the document flow.
+  Here we position the element well offscreen
+  and remove it from the document flow.
   */
   left: -10000px;
   position: absolute;
   top: auto;
   &:focus {
-    /**
-      On the focus event, we return the element
-      to the document flow and let the content
-      set the dimensions. Note that a static position
-      means that the 'top' property has no effect.
-     */
+  /**
+    On the focus event, we return the element
+    to the document flow and let the content
+    set the dimensions. Note that a static position
+    means that the 'top' property has no effect.
+   */
     height: auto;
     position: static;
     width: auto;

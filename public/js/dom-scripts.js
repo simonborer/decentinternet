@@ -139,3 +139,13 @@ if (localAlertClose === 'true') {
 if (alertCloseButton) {
   alertCloseButton.onclick = hideAlert;
 }
+
+var goBack = function(){
+  window.history.go(-1);
+}
+
+var backButton = document.getElementById("back");
+
+if (backButton) {
+  backButton.onclick = goBack;
+}

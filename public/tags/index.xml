@@ -6,22 +6,121 @@
     <description>Recent content in Tags on Decent Internet</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 19 Mar 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 29 Mar 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://www.decentinternet.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Accessibility</title>
+      <title>accessibility</title>
       <link>https://www.decentinternet.com/tags/accessibility/</link>
-      <pubDate>Tue, 19 Mar 2019 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 29 Mar 2019 00:00:00 +0000</pubDate>
       
       <guid>https://www.decentinternet.com/tags/accessibility/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Alt</title>
+      <title>assistive technology</title>
+      <link>https://www.decentinternet.com/tags/assistive-technology/</link>
+      <pubDate>Fri, 29 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.decentinternet.com/tags/assistive-technology/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>code</title>
+      <link>https://www.decentinternet.com/tags/code/</link>
+      <pubDate>Fri, 29 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.decentinternet.com/tags/code/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>iOS</title>
+      <link>https://www.decentinternet.com/tags/ios/</link>
+      <pubDate>Fri, 29 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.decentinternet.com/tags/ios/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ARIA</title>
+      <link>https://www.decentinternet.com/tags/aria/</link>
+      <pubDate>Tue, 19 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.decentinternet.com/tags/aria/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>DOM</title>
+      <link>https://www.decentinternet.com/tags/dom/</link>
+      <pubDate>Tue, 19 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.decentinternet.com/tags/dom/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>DOM API</title>
+      <link>https://www.decentinternet.com/tags/dom-api/</link>
+      <pubDate>Tue, 19 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.decentinternet.com/tags/dom-api/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>semantics</title>
+      <link>https://www.decentinternet.com/tags/semantics/</link>
+      <pubDate>Tue, 19 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.decentinternet.com/tags/semantics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>WAI-ARIA</title>
+      <link>https://www.decentinternet.com/tags/wai-aria/</link>
+      <pubDate>Tue, 19 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.decentinternet.com/tags/wai-aria/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>emojis</title>
+      <link>https://www.decentinternet.com/tags/emojis/</link>
+      <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.decentinternet.com/tags/emojis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>specifications</title>
+      <link>https://www.decentinternet.com/tags/specifications/</link>
+      <pubDate>Thu, 11 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.decentinternet.com/tags/specifications/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>vintage</title>
+      <link>https://www.decentinternet.com/tags/vintage/</link>
+      <pubDate>Thu, 11 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.decentinternet.com/tags/vintage/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>alt</title>
       <link>https://www.decentinternet.com/tags/alt/</link>
       <pubDate>Thu, 04 Oct 2018 00:00:00 +0000</pubDate>
       
@@ -30,11 +129,74 @@
     </item>
     
     <item>
-      <title>Aria</title>
-      <link>https://www.decentinternet.com/tags/aria/</link>
-      <pubDate>Tue, 19 Mar 2019 00:00:00 +0000</pubDate>
+      <title>charts</title>
+      <link>https://www.decentinternet.com/tags/charts/</link>
+      <pubDate>Thu, 04 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://www.decentinternet.com/tags/aria/</guid>
+      <guid>https://www.decentinternet.com/tags/charts/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>content</title>
+      <link>https://www.decentinternet.com/tags/content/</link>
+      <pubDate>Thu, 04 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.decentinternet.com/tags/content/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>forms</title>
+      <link>https://www.decentinternet.com/tags/forms/</link>
+      <pubDate>Thu, 04 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.decentinternet.com/tags/forms/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>graphs</title>
+      <link>https://www.decentinternet.com/tags/graphs/</link>
+      <pubDate>Thu, 04 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.decentinternet.com/tags/graphs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>links</title>
+      <link>https://www.decentinternet.com/tags/links/</link>
+      <pubDate>Thu, 04 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.decentinternet.com/tags/links/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>PDFs</title>
+      <link>https://www.decentinternet.com/tags/pdfs/</link>
+      <pubDate>Thu, 04 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.decentinternet.com/tags/pdfs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>video</title>
+      <link>https://www.decentinternet.com/tags/video/</link>
+      <pubDate>Thu, 04 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.decentinternet.com/tags/video/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Zelda</title>
+      <link>https://www.decentinternet.com/tags/zelda/</link>
+      <pubDate>Thu, 04 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.decentinternet.com/tags/zelda/</guid>
       <description></description>
     </item>
     
@@ -57,83 +219,11 @@
     </item>
     
     <item>
-      <title>Charts</title>
-      <link>https://www.decentinternet.com/tags/charts/</link>
-      <pubDate>Thu, 04 Oct 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.decentinternet.com/tags/charts/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Cheatsheet</title>
+      <title>cheatsheet</title>
       <link>https://www.decentinternet.com/tags/cheatsheet/</link>
       <pubDate>Mon, 01 Oct 2018 00:00:00 +0000</pubDate>
       
       <guid>https://www.decentinternet.com/tags/cheatsheet/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Code</title>
-      <link>https://www.decentinternet.com/tags/code/</link>
-      <pubDate>Tue, 19 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.decentinternet.com/tags/code/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Content</title>
-      <link>https://www.decentinternet.com/tags/content/</link>
-      <pubDate>Thu, 04 Oct 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.decentinternet.com/tags/content/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Disability</title>
-      <link>https://www.decentinternet.com/tags/disability/</link>
-      <pubDate>Fri, 28 Sep 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.decentinternet.com/tags/disability/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Dom</title>
-      <link>https://www.decentinternet.com/tags/dom/</link>
-      <pubDate>Tue, 19 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.decentinternet.com/tags/dom/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Dom Api</title>
-      <link>https://www.decentinternet.com/tags/dom-api/</link>
-      <pubDate>Tue, 19 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.decentinternet.com/tags/dom-api/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Emojis</title>
-      <link>https://www.decentinternet.com/tags/emojis/</link>
-      <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.decentinternet.com/tags/emojis/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Forms</title>
-      <link>https://www.decentinternet.com/tags/forms/</link>
-      <pubDate>Thu, 04 Oct 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.decentinternet.com/tags/forms/</guid>
       <description></description>
     </item>
     
@@ -147,16 +237,7 @@
     </item>
     
     <item>
-      <title>Graphs</title>
-      <link>https://www.decentinternet.com/tags/graphs/</link>
-      <pubDate>Thu, 04 Oct 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.decentinternet.com/tags/graphs/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Html5 Boilerplate</title>
+      <title>HTML5 Boilerplate</title>
       <link>https://www.decentinternet.com/tags/html5-boilerplate/</link>
       <pubDate>Mon, 01 Oct 2018 00:00:00 +0000</pubDate>
       
@@ -165,70 +246,7 @@
     </item>
     
     <item>
-      <title>Links</title>
-      <link>https://www.decentinternet.com/tags/links/</link>
-      <pubDate>Thu, 04 Oct 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.decentinternet.com/tags/links/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Pdfs</title>
-      <link>https://www.decentinternet.com/tags/pdfs/</link>
-      <pubDate>Thu, 04 Oct 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.decentinternet.com/tags/pdfs/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Semantics</title>
-      <link>https://www.decentinternet.com/tags/semantics/</link>
-      <pubDate>Tue, 19 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.decentinternet.com/tags/semantics/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Seo</title>
-      <link>https://www.decentinternet.com/tags/seo/</link>
-      <pubDate>Fri, 28 Sep 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.decentinternet.com/tags/seo/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Specifications</title>
-      <link>https://www.decentinternet.com/tags/specifications/</link>
-      <pubDate>Thu, 11 Oct 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.decentinternet.com/tags/specifications/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Video</title>
-      <link>https://www.decentinternet.com/tags/video/</link>
-      <pubDate>Thu, 04 Oct 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.decentinternet.com/tags/video/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Vintage</title>
-      <link>https://www.decentinternet.com/tags/vintage/</link>
-      <pubDate>Thu, 11 Oct 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.decentinternet.com/tags/vintage/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Visibility</title>
+      <title>visibility</title>
       <link>https://www.decentinternet.com/tags/visibility/</link>
       <pubDate>Mon, 01 Oct 2018 00:00:00 +0000</pubDate>
       
@@ -237,29 +255,29 @@
     </item>
     
     <item>
-      <title>Wai Aria</title>
-      <link>https://www.decentinternet.com/tags/wai-aria/</link>
-      <pubDate>Tue, 19 Mar 2019 00:00:00 +0000</pubDate>
+      <title>disability</title>
+      <link>https://www.decentinternet.com/tags/disability/</link>
+      <pubDate>Fri, 28 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://www.decentinternet.com/tags/wai-aria/</guid>
+      <guid>https://www.decentinternet.com/tags/disability/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Wcag</title>
+      <title>SEO</title>
+      <link>https://www.decentinternet.com/tags/seo/</link>
+      <pubDate>Fri, 28 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.decentinternet.com/tags/seo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>WCAG</title>
       <link>https://www.decentinternet.com/tags/wcag/</link>
       <pubDate>Fri, 28 Sep 2018 00:00:00 +0000</pubDate>
       
       <guid>https://www.decentinternet.com/tags/wcag/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Zelda</title>
-      <link>https://www.decentinternet.com/tags/zelda/</link>
-      <pubDate>Thu, 04 Oct 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.decentinternet.com/tags/zelda/</guid>
       <description></description>
     </item>
     

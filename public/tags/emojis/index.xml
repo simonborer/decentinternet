@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Emojis on Decent Internet</title>
+    <title>emojis on Decent Internet</title>
     <link>https://www.decentinternet.com/tags/emojis/</link>
-    <description>Recent content in Emojis on Decent Internet</description>
+    <description>Recent content in emojis on Decent Internet</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 28 Feb 2019 00:00:00 +0000</lastBuildDate>
@@ -12,7 +12,7 @@
     
     
     <item>
-      <title>Accessibile Emojis</title>
+      <title>Accessible Emojis</title>
       <link>https://www.decentinternet.com/emojis/</link>
       <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
       

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>assistive technology on Decent Internet</title>
+    <link>https://www.decentinternet.com/tags/assistive-technology/</link>
+    <description>Recent content in assistive technology on Decent Internet</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 29 Mar 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.decentinternet.com/tags/assistive-technology/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>iOS 12.2 Tracks Disability</title>
+      <link>https://www.decentinternet.com/accessibility-events/</link>
+      <pubDate>Fri, 29 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.decentinternet.com/accessibility-events/</guid>
+      <description>AppleVis reportsLink opens in new tab that Apple&amp;rsquo;s iOS 12.2 update has introduced a default setting that exposes Assistive Technology to the browser, in order to:
+... allow websites to customize their behaviour for assistive technologies, like VoiceOver. Enabling Accessibility Events may reveal whether an assistive technology is active on your iPhone. Note that it is enabled by default. Now in this day and age, everyone has varying opinions about what their comfort level is with their own privacy.</description>
+    </item>
+    
+  </channel>
+</rss>
